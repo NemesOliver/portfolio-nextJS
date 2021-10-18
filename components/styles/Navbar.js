@@ -14,6 +14,7 @@ export const Nav = styled.nav`
 
   .logo {
     color: ${({ theme }) => theme.color};
+    cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
     width: 100%;
@@ -31,9 +32,12 @@ export const Nav = styled.nav`
     justify-content: center;
     a {
       padding-left: 10px;
+
       &:hover {
         transform: scale(1.2);
         transition: 0.2s;
+        -webkit-filter: drop-shadow(1px 2px 4px rgba(108, 99, 255, 0.5));
+        filter: drop-shadow(1px 2px 4px rgba(108, 99, 255, 0.5));
       }
       &:active {
         transform: scale(0.95);
@@ -47,6 +51,8 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: flex-end;
   }
+
+  /* MEDIA QUERIES */
 
   @media all and (max-width: 660px) {
     .socials {

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Nav } from "./styles/Navbar";
 
 const icons = [
@@ -23,9 +24,11 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <h4>
-          &lt; Nemes <span>/</span>&gt;
-        </h4>
+        <Link href="/" passHref>
+          <h4>
+            &lt; Nemes <span>/</span>&gt;
+          </h4>
+        </Link>
       </div>
       <div className="socials">
         {icons.map(({ href, src, altTag }, index) => (

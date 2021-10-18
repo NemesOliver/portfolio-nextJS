@@ -6,6 +6,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta
+            name="keywords"
+            content="Portfolio, Frontend Developer, React Developer"
+          />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

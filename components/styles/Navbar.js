@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   background-color: ${({ theme }) => theme.backgroundColor};
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 10vh;
   display: grid;
@@ -16,6 +18,7 @@ export const Nav = styled.nav`
     font-weight: bold;
     width: 100%;
     display: flex;
+    white-space: nowrap;
 
     span {
       color: ${({ theme }) => theme.primary};
@@ -43,5 +46,12 @@ export const Nav = styled.nav`
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media all and (max-width: 660px) {
+    .socials {
+      opacity: 0;
+      pointer-events: none;
+    }
   }
 `;

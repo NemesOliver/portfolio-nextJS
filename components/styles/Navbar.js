@@ -35,12 +35,43 @@ export const Nav = styled.nav`
 
       &:hover {
         transform: scale(1.2);
-        transition: 0.2s;
+        transition: all 0.2s ease;
         -webkit-filter: drop-shadow(1px 2px 4px rgba(108, 99, 255, 0.5));
-        filter: drop-shadow(1px 2px 4px rgba(108, 99, 255, 0.5));
+        filter: drop-shadow(white 1px 0 8px);
       }
       &:active {
         transform: scale(0.95);
+      }
+    }
+  }
+
+  .menu-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    .sliding-menu {
+      display: flex;
+      justify-content: space-evenly;
+      position: absolute;
+      right: 44px;
+      background-color: ${({ theme }) => theme.secondary};
+      border: 3px solid ${({ theme }) => theme.primary};
+      border-radius: 5px;
+      padding: 5px 30px;
+      width: 550px;
+
+      a {
+        font-size: 1.125rem;
+        font-weight: bold;
+        color: #ffffff;
+
+        &:hover {
+          text-shadow: white 1px 0 10px;
+          transform: scale(1.08);
+          transition: all 0.2s ease;
+        }
       }
     }
   }

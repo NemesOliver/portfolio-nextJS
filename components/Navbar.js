@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { Nav } from "./styles/Navbar";
 
 const icons = [
@@ -21,6 +22,10 @@ const icons = [
 ];
 
 const Navbar = () => {
+  const [open, setOpen] = useState(true);
+
+  const handleClick = () => setOpen(!open);
+
   return (
     <Nav>
       <div className="logo">
@@ -44,12 +49,22 @@ const Navbar = () => {
         ))}
       </div>
       <div className="menu-icon">
-        <Image
-          src="/assets/menu_icon.svg"
-          alt="menu icon"
-          height="34"
-          width="34"
-        />
+        <div className="menu-wrapper">
+          {open && (
+            <div className="sliding-menu">
+              <Link href="/">HOME</Link>
+              <Link href="/about">ABOUT</Link>
+              <Link href="/work">MY WORK</Link>
+            </div>
+          )}
+          <Image
+            onClick={() => handleClick()}
+            src="/assets/menu_icon.svg"
+            alt="menu icon"
+            height="34"
+            width="34"
+          />
+        </div>
       </div>
     </Nav>
   );

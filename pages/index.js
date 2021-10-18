@@ -5,15 +5,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Oliver Nemes / Home</title>
+        <title>Oliver Nemes - Home</title>
         <meta
           name="keywords"
           content="Portfolio, Frontend Developer, React Developer"
         />
-        <link rel="icon" href="/assets/menu_icon.png" />
       </Head>
 
-      <main className={styles.container}>Home</main>
+      <main className={styles.container}>
+        <h1>header 1</h1>
+        <h2>header 2</h2>
+        <h3>HEADER </h3>
+        <p>paragraph</p>
+      </main>
     </div>
   );
 }

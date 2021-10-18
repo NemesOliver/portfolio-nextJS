@@ -19,13 +19,13 @@ const Navbar = () => {
 export default Navbar;
 
 const Nav = styled.div`
-  background-color: #030303;
+  background-color: ${({ theme }) => theme.backgroundColor};
 
   .logo {
-    color: #ffffff;
+    color: ${({ theme }) => theme.color};
   }
 
   span {
-    color: #6c63ff;
+    color: ${({ theme }) => theme.primary};
   }
 `;

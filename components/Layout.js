@@ -1,18 +1,15 @@
 import Navbar from "./Navbar";
 import styled from "styled-components";
+import { Container } from "./styles/Container";
 
 const Layout = ({ children }) => {
   return (
-    <Font>
+    <Container>
       <Navbar />
       <main>{children}</main>
       {/* Footer */}
-    </Font>
+    </Container>
   );
 };
 
 export default Layout;
-
-const Font = styled.div`
-  font-family: Montserrat;
-`;

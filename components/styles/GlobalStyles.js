@@ -45,6 +45,17 @@ const GlobalStyles = createGlobalStyle`
         font-weight: 400;
     }
 
+    body::-webkit-scrollbar {
+        width: 0.3em;
+        
+    }       
+ 
+    body::-webkit-scrollbar-thumb {
+        background-color: ${({ theme }) => theme.primary};
+        outline: none;
+        border-radius: 50px;
+    }
+
 
 `;
 

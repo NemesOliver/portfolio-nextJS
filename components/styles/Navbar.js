@@ -29,7 +29,7 @@ export const Nav = styled.nav`
     a {
       padding-left: 10px;
       &:hover {
-        transform: scale(1.1);
+        transform: scale(1.2);
         transition: 0.2s;
       }
       &:active {
@@ -40,6 +40,7 @@ export const Nav = styled.nav`
 
   .menu-icon {
     width: 100%;
+    cursor: pointer;
     display: flex;
     justify-content: flex-end;
   }

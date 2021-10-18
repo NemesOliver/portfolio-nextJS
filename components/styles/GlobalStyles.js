@@ -18,11 +18,11 @@ const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
-        
+        cursor: pointer;
     }
 
     li {
-        text-decoration: none;
+        list-style-type: none;
     }
 
     h1 {
@@ -36,7 +36,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h3 {
-        font-weight: 24px;
+        font-weight: 1.5rem;
         font-weight: 700;
     }
 

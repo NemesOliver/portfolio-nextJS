@@ -50,7 +50,7 @@ export default function Home() {
               <span className="blue">”</span> );
             </h2>
           </div>
-          <div className='about-wrapper'>
+          <div className="about-wrapper">
             <div className="img-wrapper-pc">
               <Image
                 src="/assets/person_pc.svg"
@@ -58,7 +58,7 @@ export default function Home() {
                 layout="fill"
               />
             </div>
-            <div className='about-text'>
+            <div className="about-text">
               <h3>Hi my name is Oliver</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
@@ -67,11 +67,59 @@ export default function Home() {
                 integer accumsan, aliquam odio vitae quis diam porta metus.
                 Viverra tellus neque vitae ut at pellentesque...
               </p>
-              <Link href='/about'><a>&#8594; LEARN MORE</a></Link>
+              <Link href="/about">
+                <a>&#8594; LEARN MORE</a>
+              </Link>
             </div>
           </div>
         </section>
-        <section className="my-work-intro"></section>
+        <div className="hr"></div>
+        <section className="my-work-intro">
+          <div className="card-container">
+            <div className="card">
+              <Image
+                src="/assets/react_card.svg"
+                alt="react card"
+                width={250}
+                height={180}
+              />
+              <h3>I LOVE REACT</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+                vitae eget id libero a.{" "}
+              </p>
+            </div>
+            <div className="card">
+              <Image
+                src="/assets/responsive_design.svg"
+                alt="responsive design"
+                width={250}
+                height={180}
+              />
+              <h3>RESPONSIVE DESIGN</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+                vitae eget id libero a.{" "}
+              </p>
+            </div>
+            <div className="card">
+              <Image
+                src="/assets/dreamer_image.svg"
+                alt="dreamer"
+                width={250}
+                height={180}
+              />
+              <h3>DUNNO YET</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
+                vitae eget id libero a.{" "}
+              </p>
+              <Link href="/work">
+                <a>&#8594; LEARN MORE</a>
+              </Link>
+            </div>
+          </div>
+        </section>
       </StyledHome>
     </>
   );

@@ -5,6 +5,13 @@ export const StyledHome = styled.div`
     width: 100%;
   }
 
+  .hr {
+    width: 70%;
+    height: 3px;
+    background: ${({ theme }) => theme.primary};
+    margin: 150px auto;
+  }
+
   .landing-page {
     display: flex;
     justify-content: space-between;
@@ -107,6 +114,47 @@ export const StyledHome = styled.div`
             transition: 0.5s all ease;
           }
         }
+      }
+    }
+  }
+
+  .card-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+    position: relative;
+
+    a {
+      color: #ffffff;
+      opacity: 50%;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin-right: 6vw;
+
+      &:hover {
+        opacity: 100%;
+        transition: 0.5s all ease;
+      }
+    }
+
+    .card {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h3 {
+        width: 50%;
+      }
+
+      p {
+        width: 50%;
+        line-height: 185%;
       }
     }
   }

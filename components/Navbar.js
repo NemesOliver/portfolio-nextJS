@@ -22,9 +22,10 @@ const icons = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
-  const handleClick = () => setOpen(!open);
+  const toggleMenu = () => setOpen(!open);
+  const closeMenu = () => setOpen(false);
 
   return (
     <Nav>
@@ -52,13 +53,21 @@ const Navbar = () => {
         <div className="menu-wrapper">
           {open && (
             <div className="sliding-menu">
-              <Link href="/">HOME</Link>
-              <Link href="/about">ABOUT</Link>
-              <Link href="/work">MY WORK</Link>
+              <div onClick={() => closeMenu()}>
+                <Link href="/" onClick={() => closeMenu()}>
+                  HOME
+                </Link>
+              </div>
+              <div onClick={() => closeMenu()}>
+                <Link href="/about">ABOUT</Link>
+              </div>
+              <div onClick={() => closeMenu()}>
+                <Link href="/work">MY WORK</Link>
+              </div>
             </div>
           )}
           <Image
-            onClick={() => handleClick()}
+            onClick={() => toggleMenu()}
             src="/assets/menu_icon.svg"
             alt="menu icon"
             height="34"

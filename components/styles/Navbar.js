@@ -60,16 +60,17 @@ export const Nav = styled.nav`
       border: 3px solid ${({ theme }) => theme.primary};
       border-radius: 5px;
       padding: 5px 30px;
-      width: 550px;
+      /* min-width: 550px; */
 
       a {
         font-size: 1.125rem;
         font-weight: bold;
         color: #ffffff;
+        white-space: nowrap;
+        padding: 0 10px;
 
         &:hover {
           text-shadow: white 1px 0 10px;
-          transform: scale(1.08);
           transition: all 0.2s ease;
         }
       }
@@ -84,6 +85,18 @@ export const Nav = styled.nav`
   }
 
   /* MEDIA QUERIES */
+
+  @media all and (max-width: 830px) {
+    .sliding-menu {
+      flex-direction: column;
+      height: 150px;
+      top: 44px;
+      right: 0 !important;
+      align-items: center;
+    }
+
+   
+  }
 
   @media all and (max-width: 660px) {
     .socials {

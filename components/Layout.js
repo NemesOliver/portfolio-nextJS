@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import styled from "styled-components";
+import Footer from "./Footer";
 import { Container } from "./styles/Container";
 
 const Layout = ({ children }) => {
@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <Container>
       <Navbar />
       <main>{children}</main>
-      {/* Footer */}
+      <Footer />
     </Container>
   );
 };

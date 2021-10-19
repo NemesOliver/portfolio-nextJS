@@ -27,17 +27,17 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h1 {
-        font-size: 6.75rem;
+         font-size: 6.75rem; /* 102px */
         font-weight: 900;
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 4.5rem;  /* 72px */
         font-weight: 900;
     }
 
     h3 {
-        font-weight: 1.5rem;
+        font-weight: 1.5rem;  /* 24px */ 
         font-weight: 700;
     }
 

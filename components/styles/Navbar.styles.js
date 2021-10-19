@@ -36,7 +36,7 @@ export const Nav = styled.nav`
       &:hover {
         transform: scale(1.2);
         transition: all 0.2s ease;
-        -webkit-filter: drop-shadow(1px 2px 4px rgba(108, 99, 255, 0.5));
+        -webkit-filter: drop-shadow(1px 2px 4px white);
         filter: drop-shadow(white 1px 0 8px);
       }
       &:active {
@@ -84,8 +84,13 @@ export const Nav = styled.nav`
 
     img {
       transition: 0.5s all ease;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease;
     }
   }
+}
 
   /* MEDIA QUERIES */
 

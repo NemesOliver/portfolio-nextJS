@@ -67,6 +67,7 @@ const Navbar = () => {
             </div>
           )}
           <Image
+            rotate={0}
             onClick={() => toggleMenu()}
             src="/assets/menu_icon.svg"
             alt="menu icon"

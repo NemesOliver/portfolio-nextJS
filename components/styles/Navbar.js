@@ -60,7 +60,6 @@ export const Nav = styled.nav`
       border: 3px solid ${({ theme }) => theme.primary};
       border-radius: 5px;
       padding: 5px 30px;
-      /* min-width: 550px; */
 
       a {
         font-size: 1.125rem;
@@ -82,6 +81,10 @@ export const Nav = styled.nav`
     cursor: pointer;
     display: flex;
     justify-content: flex-end;
+
+    img {
+      transition: 0.5s all ease;
+    }
   }
 
   /* MEDIA QUERIES */
@@ -94,8 +97,6 @@ export const Nav = styled.nav`
       right: 0 !important;
       align-items: center;
     }
-
-   
   }
 
   @media all and (max-width: 660px) {

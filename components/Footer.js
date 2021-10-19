@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer_image from "./Footer_image";
 import { Footer as StyledFooter } from "./styles/Footer.styles";
 
 const Footer = () => {
@@ -17,6 +18,7 @@ const Footer = () => {
           alt="illustration with social icons"
           layout="fill"
         />
+        {/* <Footer_image /> */}
       </div>
     </StyledFooter>
   );

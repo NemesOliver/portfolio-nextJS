@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
+  z-index: 5;
   background-color: ${({ theme }) => theme.backgroundColor};
   position: sticky;
   top: 0;

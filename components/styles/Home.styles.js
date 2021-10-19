@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const StyledHome = styled.div`
   section {
     width: 100%;
-    height: 90vh;
   }
 
   .landing-page {
     display: flex;
     justify-content: space-between;
+    height: 90vh;
 
     .text-wrapper {
       width: 45%;
@@ -54,6 +54,60 @@ export const StyledHome = styled.div`
       width: 50vw;
       margin-top: 0;
       margin-right: -5vw;
+    }
+  }
+
+  .about-intro {
+    margin-top: 10vh;
+    .box {
+      background: rgba(63, 61, 86, 0.3);
+      padding: 15px 60px;
+
+      .argument {
+        color: #e12222;
+      }
+      .function {
+        color: #dc78f5;
+      }
+      .yellow {
+        color: #f4e87c;
+      }
+      .blue {
+        color: #838ef2;
+      }
+    }
+
+    .img-wrapper-pc {
+      position: relative;
+      width: 750px;
+      height: 430px;
+    }
+
+    .about-wrapper {
+      display: flex;
+      padding-top: 100px;
+      justify-content: space-between;
+      position: relative;
+      margin-right: 100px;
+
+      .about-text {
+        width: 70%;
+
+        a {
+          color: #ffffff;
+          opacity: 50%;
+          font-size: 1.5rem;
+          font-weight: bold;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+
+          &:hover {
+            opacity: 100%;
+            transition: 0.5s all ease;
+          }
+        }
+      }
     }
   }
 `;

@@ -36,13 +36,39 @@ export default function Home() {
         <section className="about-intro">
           <div className="box">
             <h2>
-              function sayHello( name ) &#123;
+              <span className="function">function</span>{" "}
+              <span className="blue">sayHello</span>(
+              <span className="argument">name</span> ) &#123;
               <br />
-              &#160; &#160; return `Hi my name is $&#123; name &#125;`
+              &#160; &#160; return `Hi my name is $&#123;
+              <span className="argument">name</span> &#125;`
               <br /> &#125;
               <br />
-              <br /> sayHello( “Oliver” );
+              <br /> <span className="blue">sayHello</span>({" "}
+              <span className="blue">“</span>
+              <span className="yellow">Oliver</span>
+              <span className="blue">”</span> );
             </h2>
+          </div>
+          <div className='about-wrapper'>
+            <div className="img-wrapper-pc">
+              <Image
+                src="/assets/person_pc.svg"
+                alt="person on computer"
+                layout="fill"
+              />
+            </div>
+            <div className='about-text'>
+              <h3>Hi my name is Oliver</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                orci ipsum gravida lorem molestie. Accumsan, vitae feugiat
+                ultrices dolor bibendum hac. Et odio lacinia duis duis sed. Nunc
+                integer accumsan, aliquam odio vitae quis diam porta metus.
+                Viverra tellus neque vitae ut at pellentesque...
+              </p>
+              <Link href='/about'><a>&#8594; LEARN MORE</a></Link>
+            </div>
           </div>
         </section>
         <section className="my-work-intro"></section>

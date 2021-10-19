@@ -37,7 +37,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h3 {
-        font-weight: 1.5rem;  /* 24px */ 
+        font-size: 1.5rem;  /* 24px */ 
         font-weight: 700;
     }
 

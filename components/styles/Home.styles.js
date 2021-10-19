@@ -5,13 +5,6 @@ export const StyledHome = styled.div`
     width: 100%;
   }
 
-  .hr {
-    width: 70%;
-    height: 3px;
-    background: ${({ theme }) => theme.primary};
-    margin: 150px auto;
-  }
-
   .landing-page {
     display: flex;
     justify-content: space-between;
@@ -38,7 +31,7 @@ export const StyledHome = styled.div`
         outline: none;
         border: none;
         padding: 10px 35px;
-        border-radius: 10px;
+        border-radius: 5px;
         color: #ffffff;
         position: absolute;
         bottom: 13vh;

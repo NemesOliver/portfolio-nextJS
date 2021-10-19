@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Footer_image from "./Footer_image";
 import { Footer as StyledFooter } from "./styles/Footer.styles";
 
 const Footer = () => {

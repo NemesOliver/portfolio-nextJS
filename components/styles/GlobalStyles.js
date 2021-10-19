@@ -22,12 +22,9 @@ const GlobalStyles = createGlobalStyle`
         cursor: pointer;
     }
 
-    li {
-        list-style-type: none;
-    }
 
     h1 {
-         font-size: 6.75rem; /* 102px */
+        font-size: 6.75rem; /* 102px */
         font-weight: 900;
     }
 
@@ -45,6 +42,13 @@ const GlobalStyles = createGlobalStyle`
         font-size: 16px;
         font-weight: 400;
     }
+
+    .hr {
+    width: 70%;
+    height: 3px;
+    background: ${({ theme }) => theme.primary};
+    margin: 150px auto;
+  }
 
     body::-webkit-scrollbar {
         width: 0.3em;

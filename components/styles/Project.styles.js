@@ -13,12 +13,17 @@ export const StyledSection = styled.section`
     /* background: lightblue; */
 
     .info {
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
 
       h1 {
-        border-bottom: 5px solid ${({ theme }) => theme.primary};
+        text-decoration: underline 10px solid ${({ theme }) => theme.primary};
+      }
+
+      h3 {
+        opacity: 50%;
+        margin-top: -50px;
       }
 
       li {
@@ -40,6 +45,23 @@ export const StyledSection = styled.section`
         position: absolute;
         bottom: 0;
         right: 0;
+        display: flex;
+        align-items: center;
+        opacity: 50%;
+
+        h3 {
+          padding-right: 10px;
+        }
+
+        span {
+          color: ${({ theme }) => theme.color};
+        }
+
+        &:hover {
+          cursor: pointer;
+          opacity: 100%;
+          transition: 0.3s all ease;
+        }
       }
     }
   }

@@ -89,6 +89,7 @@ export const StyledHome = styled.div`
       justify-content: space-between;
       position: relative;
       margin-right: 100px;
+      margin: 0;
 
       .about-text {
         width: 70%;
@@ -148,6 +149,127 @@ export const StyledHome = styled.div`
       p {
         width: 50%;
         line-height: 185%;
+      }
+    }
+  }
+
+  /* MEDIA QUERIES */
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.xxLg}) {
+    .landing-page {
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.xLg}) {
+    .my-work-intro {
+      .card-container {
+        flex-direction: column;
+        align-items: center;
+        .card {
+          width: 100%;
+          padding-top: 8em;
+        }
+      }
+
+      margin-bottom: 150px;
+    }
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.md}) {
+    .landing-page {
+      flex-direction: column-reverse;
+
+      .text-wrapper {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      button {
+        bottom: -50px !important;
+      }
+
+      .img-wrapper {
+        width: 100%;
+      }
+    }
+
+    .about-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 0px !important;
+
+      .img-wrapper-pc {
+        width: 370px;
+        height: 215;
+        margin: 0 auto;
+      }
+
+      .about-text {
+        width: 100% !important;
+      }
+    }
+
+    .box {
+      /* padding: 5px 5px !important; */
+      display: none;
+    }
+
+    h2 {
+      font-size: 0.9rem;
+    }
+
+    a {
+      bottom: -50px !important;
+      font-size: 1.2rem !important;
+    }
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+    .landing-page {
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 50vh;
+
+      .text-wrapper {
+        width: 100%;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      button {
+        bottom: -50px !important;
+      }
+
+      .img-wrapper {
+        display: none;
       }
     }
   }

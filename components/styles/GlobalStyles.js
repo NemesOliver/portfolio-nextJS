@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: Montserrat;
         background-color: ${({ theme }) => theme.backgroundColor};
         color: ${({ theme }) => theme.color};
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
     a {

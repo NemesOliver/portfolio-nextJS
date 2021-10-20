@@ -51,6 +51,7 @@ export const Nav = styled.nav`
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    cursor: pointer;
 
     .sliding-menu {
       display: flex;
@@ -79,7 +80,6 @@ export const Nav = styled.nav`
 
   .menu-icon {
     width: 100%;
-    cursor: pointer;
     display: flex;
     justify-content: flex-end;
 
@@ -89,9 +89,9 @@ export const Nav = styled.nav`
       &:hover {
         transform: scale(1.2);
         transition: all 0.2s ease;
+      }
     }
   }
-}
 
   /* MEDIA QUERIES */
 

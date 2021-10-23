@@ -20,7 +20,7 @@ export const projects = [
   {
     name: "PORTFOLIO",
     type: "FRONTEND",
-    build: ["NextJS", "Styled-Components", "Custom Design"],
+    build: ["NextJS", "Styled-Components", "Framer-motion", "Custom Design"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
     extraContent:

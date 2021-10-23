@@ -36,7 +36,7 @@ export default function Home() {
         <section className="about-intro">
           <div className="box">
             <h2>
-              <span className="function">function</span>{" "}
+              <span className="function">function</span>
               <span className="blue">sayHello</span>(
               <span className="argument">name</span> ) &#123;
               <br />
@@ -44,7 +44,7 @@ export default function Home() {
               <span className="argument">name</span> &#125;`
               <br /> &#125;
               <br />
-              <br /> <span className="blue">sayHello</span>({" "}
+              <br /> <span className="blue">sayHello</span>(
               <span className="blue">“</span>
               <span className="yellow">Oliver</span>
               <span className="blue">”</span> );
@@ -86,7 +86,7 @@ export default function Home() {
               <h3>I LOVE REACT</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                vitae eget id libero a.{" "}
+                vitae eget id libero a.
               </p>
             </div>
             <div className="card">
@@ -99,7 +99,7 @@ export default function Home() {
               <h3>RESPONSIVE DESIGN</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                vitae eget id libero a.{" "}
+                vitae eget id libero a.
               </p>
             </div>
             <div className="card">
@@ -112,7 +112,7 @@ export default function Home() {
               <h3>DUNNO YET</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                vitae eget id libero a.{" "}
+                vitae eget id libero a.
               </p>
               <Link href="/work">
                 <a>&#8594; LEARN MORE</a>

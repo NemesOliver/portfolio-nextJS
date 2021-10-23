@@ -9,12 +9,13 @@ const GlobalStyles = createGlobalStyle`
 
     html,
     body {
+        position: relative;
         padding: 0;
         margin: 0;
         font-family: Montserrat;
         background-color: ${({ theme }) => theme.backgroundColor};
         color: ${({ theme }) => theme.color};
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     a {

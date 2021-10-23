@@ -260,9 +260,9 @@ export const StyledHome = styled.div`
         width: 100%;
       }
 
-      h1 {
+      /* h1 {
         font-size: 2rem;
-      }
+      } */
 
       button {
         bottom: -50px !important;

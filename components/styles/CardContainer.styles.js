@@ -7,10 +7,6 @@ export const CardContainer = styled.div`
   margin-bottom: 300px;
   position: relative;
 
-  .card {
-    width: 20%;
-  }
-
   a {
     color: #ffffff;
     opacity: 50%;
@@ -24,5 +20,9 @@ export const CardContainer = styled.div`
       opacity: 100%;
       transition: 0.5s all ease;
     }
+  }
+
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
+    flex-direction: column;
   }
 `;

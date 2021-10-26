@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Card from "../components/Card";
 import { CardContainer } from "../components/styles/CardContainer.styles";
 import { StyledHome } from "../components/styles/Home.styles";
+import homeCards from "../utils/homeCards";
 
 export default function Home() {
   return (
@@ -74,45 +76,14 @@ export default function Home() {
         <div className="hr"></div>
         <section className="my-work-intro">
           <CardContainer>
-            <div className="card">
-              <Image
-                src="/assets/react_card.svg"
-                alt="react card"
-                width={250}
-                height={180}
+            {homeCards.map((card, index) => (
+              <Card
+                key={index}
+                title={card.title}
+                description={card.description}
+                image={card.image}
               />
-              <h3>I LOVE REACT</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                vitae eget id libero a.
-              </p>
-            </div>
-            <div className="card">
-              <Image
-                src="/assets/responsive_design.svg"
-                alt="responsive design"
-                width={250}
-                height={180}
-              />
-              <h3>RESPONSIVE DESIGN</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                vitae eget id libero a.
-              </p>
-            </div>
-            <div className="card">
-              <Image
-                src="/assets/dreamer_image.svg"
-                alt="dreamer"
-                width={250}
-                height={180}
-              />
-              <h3>DUNNO YET</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
-                vitae eget id libero a.
-              </p>
-            </div>
+            ))}
             <Link href="/work">
               <a>&#8594; LEARN MORE</a>
             </Link>

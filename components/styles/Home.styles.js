@@ -14,10 +14,6 @@ export const StyledHome = styled.div`
       width: 45%;
       position: relative;
 
-      h1 {
-        white-space: pre-wrap;
-      }
-
       p {
         line-height: 180%;
       }
@@ -112,23 +108,6 @@ export const StyledHome = styled.div`
     }
   }
 
-  .card {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h3 {
-      width: 50%;
-    }
-
-    p {
-      width: 50%;
-      line-height: 185%;
-    }
-  }
-
   /* MEDIA QUERIES */
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xxLg}) {
@@ -144,19 +123,6 @@ export const StyledHome = styled.div`
   }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xLg}) {
-    .my-work-intro {
-      .card-container {
-        flex-direction: column;
-        align-items: center;
-        .card {
-          width: 100%;
-          padding-top: 8em;
-        }
-      }
-
-      margin-bottom: 150px;
-    }
-
     h2 {
       font-size: 2rem;
     }

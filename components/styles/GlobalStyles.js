@@ -42,6 +42,7 @@ const GlobalStyles = createGlobalStyle`
     p {
         font-size: 16px;
         font-weight: 400;
+        line-height: 185%;
     }
 
     .hr {

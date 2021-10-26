@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import { StyledAbout } from "../components/styles/About.styles";
 import { CardContainer } from "../components/styles/CardContainer.styles";
+import Card from "../components/Card";
+import aboutCards from "../utils/aboutCards";
 
 const about = () => {
   return (
@@ -121,36 +123,14 @@ const about = () => {
             THINGS I WANT TO <br /> LEARN NEXT...
           </h2>
           <CardContainer>
-            <div className="card">
-              <h1>1.</h1>
-              <h3>TESTING</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                consequat laoreet nascetur fusce. <br /> Tellus curabitur
-                gravida sapien ultrices. Nulla volutpat nullam magnis egestas
-                ultrices. Sit faucibus egestas nisl adipiscing congue sed.{" "}
-              </p>
-            </div>
-            <div className="card">
-              <h1>2.</h1>
-              <h3>TYPESCRIPT</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                consequat laoreet nascetur fusce. <br /> Tellus curabitur
-                gravida sapien ultrices. Nulla volutpat nullam magnis egestas
-                ultrices. Sit faucibus egestas nisl adipiscing congue sed.{" "}
-              </p>
-            </div>
-            <div className="card">
-              <h1>3.</h1>
-              <h3>PYTHON</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit
-                consequat laoreet nascetur fusce. <br /> Tellus curabitur
-                gravida sapien ultrices. Nulla volutpat nullam magnis egestas
-                ultrices. Sit faucibus egestas nisl adipiscing congue sed.{" "}
-              </p>
-            </div>
+            {aboutCards.map((card, index) => (
+              <Card
+                key={index}
+                mainText={card.mainText}
+                title={card.title}
+                description={card.description}
+              />
+            ))}
           </CardContainer>
         </div>
       </StyledAbout>

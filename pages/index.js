@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { CardContainer } from "../components/styles/CardContainer.styles";
 import { StyledHome } from "../components/styles/Home.styles";
 
 export default function Home() {
@@ -75,7 +76,7 @@ export default function Home() {
         </section>
         <div className="hr"></div>
         <section className="my-work-intro">
-          <div className="card-container">
+          <CardContainer>
             <div className="card">
               <Image
                 src="/assets/react_card.svg"
@@ -114,11 +115,11 @@ export default function Home() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet,
                 vitae eget id libero a.
               </p>
-              <Link href="/work">
-                <a>&#8594; LEARN MORE</a>
-              </Link>
             </div>
-          </div>
+            <Link href="/work">
+              <a>&#8594; LEARN MORE</a>
+            </Link>
+          </CardContainer>
         </section>
       </StyledHome>
     </>

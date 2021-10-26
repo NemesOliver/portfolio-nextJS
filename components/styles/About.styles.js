@@ -101,7 +101,7 @@ export const StyledAbout = styled.div`
       margin-bottom: 150px;
     }
 
-    .cards {
+    /* .cards {
       display: flex;
       justify-content: space-evenly;
       margin-bottom: 300px;
@@ -109,6 +109,6 @@ export const StyledAbout = styled.div`
       .card {
         width: 20%;
       }
-    }
+    } */
   }
 `;

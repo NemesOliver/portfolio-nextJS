@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { StyledAbout } from "../components/styles/About.styles";
+import { CardContainer } from "../components/styles/CardContainer.styles";
 
 const about = () => {
   return (
@@ -119,7 +120,7 @@ const about = () => {
           <h2>
             THINGS I WANT TO <br /> LEARN NEXT...
           </h2>
-          <div className="cards">
+          <CardContainer>
             <div className="card">
               <h1>1.</h1>
               <h3>TESTING</h3>
@@ -150,7 +151,7 @@ const about = () => {
                 ultrices. Sit faucibus egestas nisl adipiscing congue sed.{" "}
               </p>
             </div>
-          </div>
+          </CardContainer>
         </div>
       </StyledAbout>
     </>

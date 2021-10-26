@@ -112,44 +112,20 @@ export const StyledHome = styled.div`
     }
   }
 
-  .card-container {
+  .card {
+    width: 25%;
     display: flex;
-    text-align: center;
-    justify-content: space-evenly;
-    padding-bottom: 150px;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-    a {
-      color: #ffffff;
-      opacity: 50%;
-      font-size: 1.5rem;
-      font-weight: bold;
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      margin-right: 6vw;
-
-      &:hover {
-        opacity: 100%;
-        transition: 0.5s all ease;
-      }
+    h3 {
+      width: 50%;
     }
 
-    .card {
-      width: 25%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      h3 {
-        width: 50%;
-      }
-
-      p {
-        width: 50%;
-        line-height: 185%;
-      }
+    p {
+      width: 50%;
+      line-height: 185%;
     }
   }
 

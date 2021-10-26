@@ -100,15 +100,5 @@ export const StyledAbout = styled.div`
     h2 {
       margin-bottom: 150px;
     }
-
-    /* .cards {
-      display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 300px;
-
-      .card {
-        width: 20%;
-      }
-    } */
   }
 `;

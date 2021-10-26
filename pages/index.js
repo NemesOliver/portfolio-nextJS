@@ -17,10 +17,7 @@ export default function Home() {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
               duis enim ac quis curabitur mauris id viverra. Mi volutpat duis in
-              posuere est, eleifend. <br /> Duis laoreet orci gravida sagittis
-              lorem viverra malesuada faucibus aliquet. Vulputate faucibus
-              aenean dignissim tempus semper felis. Suscipit sapien, quis amet
-              vel pharetra. Arcu auctor ac metus, odio.
+              posuere est, eleifend.
             </p>
             <Link href="/work" passHref>
               <button type="button">MY WORK</button>

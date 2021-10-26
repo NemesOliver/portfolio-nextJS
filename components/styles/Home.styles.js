@@ -51,9 +51,9 @@ export const StyledHome = styled.div`
     .img-wrapper {
       position: relative;
       height: 100%;
-      width: 50vw;
+      width: 50%;
       margin-top: 0;
-      margin-right: -5vw;
+      margin-right: 0;
     }
   }
 
@@ -228,24 +228,27 @@ export const StyledHome = styled.div`
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
     .landing-page {
-      flex-direction: column;
-      justify-content: flex-start;
-      height: 50vh;
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      /* height: 100vh; */
 
       .text-wrapper {
         width: 100%;
+        text-align: center;
       }
 
       /* h1 {
         font-size: 2rem;
       } */
 
-      button {
-        bottom: -50px !important;
+      .img-wrapper {
+        height: 40%;
+        display: block;
       }
 
-      .img-wrapper {
-        display: none;
+      button {
+        position: relative !important;
+        margin: 0 auto;
       }
     }
   }

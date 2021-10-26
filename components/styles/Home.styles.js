@@ -230,6 +230,7 @@ export const StyledHome = styled.div`
     .landing-page {
       flex-direction: column-reverse;
       justify-content: flex-end;
+      align-items: center;
       /* height: 100vh; */
 
       .text-wrapper {

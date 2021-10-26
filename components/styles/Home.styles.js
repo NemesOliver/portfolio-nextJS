@@ -220,13 +220,13 @@ export const StyledHome = styled.div`
     }
   }
 
-  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+  /* @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     h1 {
       font-size: 2rem;
     }
-  }
+  } */
 
-  @media all and (max-width: ${({ theme }) => theme.breakpoints.xs}) {
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     .landing-page {
       flex-direction: column-reverse;
       justify-content: flex-end;
@@ -237,10 +237,6 @@ export const StyledHome = styled.div`
         width: 100%;
         text-align: center;
       }
-
-      /* h1 {
-        font-size: 2rem;
-      } */
 
       .img-wrapper {
         height: 40%;

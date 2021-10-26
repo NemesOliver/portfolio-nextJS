@@ -4,7 +4,6 @@ export const themeLight = {
   primary: "#6C63FF",
   secondary: "#3F3D56",
   breakpoints: {
-    xs: "390px",
     sm: "576px",
     md: "768px",
     lg: "992px",

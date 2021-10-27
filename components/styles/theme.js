@@ -8,6 +8,6 @@ export const themeLight = {
     md: "768px",
     lg: "992px",
     xLg: "1200px",
-    xxLg: "1570px",
+    xxLg: "1440px",
   },
 };

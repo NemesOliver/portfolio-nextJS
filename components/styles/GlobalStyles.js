@@ -45,6 +45,10 @@ const GlobalStyles = createGlobalStyle`
         line-height: 185%;
     }
 
+    h1, h2, h3, p{
+        text-align: center;
+       }
+
     .hr {
     width: 70%;
     height: 3px;
@@ -64,12 +68,22 @@ const GlobalStyles = createGlobalStyle`
         border-radius: 50px;
     }
 
-    @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-       h1, h2, h3, p{
-        text-align: center;
-       } 
+
+    @media all and (min-width: ${({ theme }) => theme.breakpoints.sm}) {
+       h1 {
+           font-size: 4.5rem;
+       }
     }
 
+    @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
+        h1, h2, h3, p{
+        text-align: left;
+       }
+
+       h1 {
+           font-size: 5rem;
+       }
+    }
 
 `;
 

@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <StyledHome>
         <Section>
-          <Flex direction="column">
+          <Flex direction="column" switch="row-reverse">
             <div className="img-hackers-mind">
               <Image
                 src="/assets/landing_image.svg"

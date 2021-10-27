@@ -8,6 +8,10 @@ const Flex = styled.div`
   flex-direction: ${(props) => props.direction};
   align-items: center;
   justify-content: center;
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
+    flex-direction: ${(props) => props.switch && props.switch};
+  }
 `;
 
 export default Flex;

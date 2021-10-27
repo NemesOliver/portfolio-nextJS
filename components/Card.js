@@ -4,7 +4,11 @@ import styled from "styled-components";
 
 const StyledCard = styled.div`
   width: 20%;
-  text-align: center;
+  h1,
+  h3,
+  p {
+    text-align: center;
+  }
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 100%;

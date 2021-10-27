@@ -123,12 +123,12 @@ const about = () => {
             THINGS I WANT TO <br /> LEARN NEXT...
           </h2>
           <CardContainer>
-            {aboutCards.map((card, index) => (
+            {aboutCards.map(({ mainText, title, description }, index) => (
               <Card
                 key={index}
-                mainText={card.mainText}
-                title={card.title}
-                description={card.description}
+                mainText={mainText}
+                title={title}
+                description={description}
               />
             ))}
           </CardContainer>

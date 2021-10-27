@@ -76,12 +76,12 @@ export default function Home() {
         <div className="hr"></div>
         <section className="my-work-intro">
           <CardContainer>
-            {homeCards.map((card, index) => (
+            {homeCards.map(({ title, description, image }, index) => (
               <Card
                 key={index}
-                title={card.title}
-                description={card.description}
-                image={card.image}
+                title={title}
+                description={description}
+                image={image}
               />
             ))}
             <Link href="/work">

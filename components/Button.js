@@ -1,7 +1,12 @@
 import styled from "styled-components";
+import Link from "next/link";
 
-const Button = ({ content }) => {
-  return <StyledButton type="button">{content}</StyledButton>;
+const Button = ({ content, to }) => {
+  return (
+    <Link href={to} passHref>
+      <StyledButton type="button">{content}</StyledButton>
+    </Link>
+  );
 };
 
 const StyledButton = styled.button`

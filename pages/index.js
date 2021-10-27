@@ -33,9 +33,7 @@ export default function Home() {
                 duis enim ac quis curabitur mauris id viverra. Mi volutpat duis
                 in posuere est, eleifend.
               </p>
-              <Link href="/work" passHref>
-                <Button content="MY WORK" />
-              </Link>
+              <Button content="MY WORK" to="/work" />
             </Flex>
           </Flex>
         </Section>

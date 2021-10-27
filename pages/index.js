@@ -1,9 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../components/Button";
 import Card from "../components/Card";
 import { CardContainer } from "../components/styles/CardContainer.styles";
 import { StyledHome } from "../components/styles/Home.styles";
+import { Section } from "../components/styles/Section.styles";
+import Flex from "../components/styles/utils/Flex.styles";
+import { StyledLink } from "../components/styles/utils/StyledLink.styles";
 import homeCards from "../utils/homeCards";
 
 export default function Home() {
@@ -13,27 +17,29 @@ export default function Home() {
         <title>Oliver Nemes - Home</title>
       </Head>
       <StyledHome>
-        <section className="landing-page">
-          <div className="text-wrapper">
-            <h1>FRONTEND DEVELOPER</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-              duis enim ac quis curabitur mauris id viverra. Mi volutpat duis in
-              posuere est, eleifend.
-            </p>
-            <Link href="/work" passHref>
-              <button type="button">MY WORK</button>
-            </Link>
-          </div>
-          <div className="img-wrapper">
-            <Image
-              src="/assets/landing_image.svg"
-              alt="hackers mind"
-              layout="fill"
-            />
-          </div>
-        </section>
-        <section className="about-intro">
+        <Section>
+          <Flex direction="column">
+            <div className="img-hackers-mind">
+              <Image
+                src="/assets/landing_image.svg"
+                alt="hackers mind"
+                layout="fill"
+              />
+            </div>
+            <Flex direction="column">
+              <h1>FRONTEND DEVELOPER</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                duis enim ac quis curabitur mauris id viverra. Mi volutpat duis
+                in posuere est, eleifend.
+              </p>
+              <Link href="/work" passHref>
+                <Button content="MY WORK" />
+              </Link>
+            </Flex>
+          </Flex>
+        </Section>
+        <Section>
           <div className="box">
             <h2>
               <span className="function">function</span>
@@ -50,15 +56,15 @@ export default function Home() {
               <span className="blue">”</span> );
             </h2>
           </div>
-          <div className="about-wrapper">
-            <div className="img-wrapper-pc">
+          <Flex direction="column">
+            <div className="img-person-pc">
               <Image
                 src="/assets/person_pc.svg"
                 alt="person on computer"
                 layout="fill"
               />
             </div>
-            <div className="about-text">
+            <Flex direction="column">
               <h3>Hi my name is Oliver</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
@@ -67,14 +73,14 @@ export default function Home() {
                 integer accumsan, aliquam odio vitae quis diam porta metus.
                 Viverra tellus neque vitae ut at pellentesque...
               </p>
-              <Link href="/about">
-                <a>&#8594; LEARN MORE</a>
+              <Link href="/about" passHref>
+                <StyledLink>&#8594; LEARN MORE</StyledLink>
               </Link>
-            </div>
-          </div>
-        </section>
+            </Flex>
+          </Flex>
+        </Section>
         <div className="hr"></div>
-        <section className="my-work-intro">
+        <Section>
           <CardContainer>
             {homeCards.map(({ title, description, image }, index) => (
               <Card
@@ -84,11 +90,11 @@ export default function Home() {
                 image={image}
               />
             ))}
-            <Link href="/work">
-              <a>&#8594; LEARN MORE</a>
+            <Link href="/work" passHref>
+              <StyledLink>&#8594; LEARN MORE</StyledLink>
             </Link>
           </CardContainer>
-        </section>
+        </Section>
       </StyledHome>
     </>
   );

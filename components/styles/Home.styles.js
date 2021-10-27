@@ -1,7 +1,23 @@
 import styled from "styled-components";
 
 export const StyledHome = styled.div`
-  section {
+  .img-hackers-mind {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .img-person-pc {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+
+  /* section {
     width: 100%;
   }
 
@@ -16,31 +32,6 @@ export const StyledHome = styled.div`
 
       p {
         line-height: 180%;
-      }
-
-      button {
-        cursor: pointer;
-        background-color: #6158f4;
-        font-size: 1.5rem;
-        font-weight: bold;
-        font-family: Montserrat;
-        outline: none;
-        border: none;
-        padding: 10px 35px;
-        border-radius: 5px;
-        color: #ffffff;
-        position: absolute;
-        bottom: 13vh;
-
-        &:hover {
-          -webkit-filter: drop-shadow(1px 2px 4px white);
-          filter: drop-shadow(white 1px 0 8px);
-          transform: scale(1.05);
-          transition: 0.25s all ease;
-        }
-        &:active {
-          transform: scale(1);
-        }
       }
     }
 
@@ -108,7 +99,7 @@ export const StyledHome = styled.div`
     }
   }
 
-  /* MEDIA QUERIES */
+  MEDIA QUERIES 
 
   @media all and (max-width: ${({ theme }) => theme.breakpoints.xxLg}) {
     .landing-page {
@@ -162,7 +153,7 @@ export const StyledHome = styled.div`
 
       .img-wrapper-pc {
         width: 370px;
-        height: 215;
+        height: 250px;
         margin: 0 auto;
       }
 
@@ -172,7 +163,7 @@ export const StyledHome = styled.div`
     }
 
     .box {
-      /* padding: 5px 5px !important; */
+     
       display: none;
     }
 
@@ -186,18 +177,12 @@ export const StyledHome = styled.div`
     }
   }
 
-  /* @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
-    h1 {
-      font-size: 2rem;
-    }
-  } */
-
   @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     .landing-page {
       flex-direction: column-reverse;
       justify-content: flex-end;
       align-items: center;
-      /* height: 100vh; */
+ 
 
       .text-wrapper {
         width: 100%;
@@ -214,5 +199,5 @@ export const StyledHome = styled.div`
         margin: 0 auto;
       }
     }
-  }
+  } */
 `;

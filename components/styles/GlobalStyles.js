@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
 
 
     h1 {
-        font-size: 6.75rem; /* 102px */
+        font-size: 3rem; /* 102px - 6.75rem*/
         font-weight: 900;
     }
 
@@ -49,7 +49,8 @@ const GlobalStyles = createGlobalStyle`
     width: 70%;
     height: 3px;
     background: ${({ theme }) => theme.primary};
-    margin: 150px auto;
+    margin: 0 auto;
+    margin-bottom: 150px;
   }
 
     body::-webkit-scrollbar {
@@ -61,6 +62,12 @@ const GlobalStyles = createGlobalStyle`
         background-color: ${({ theme }) => theme.primary};
         outline: none;
         border-radius: 50px;
+    }
+
+    @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
+       h1, h2, h3, p{
+        text-align: center;
+       } 
     }
 
 

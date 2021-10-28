@@ -1,7 +1,31 @@
 import styled from "styled-components";
 
 export const StyledAbout = styled.div`
-  .about-landing {
+  .img-about-thinker {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+  .img-basic {
+    position: relative;
+    height: 200px;
+    width: 100%;
+  }
+
+  .img-advanced {
+    position: relative;
+    height: 200px;
+    width: 100%;
+  }
+
+  .picture {
+    max-width: 500px;
+    max-height: 450px;
+    border: 3px solid ${({ theme }) => theme.primary};
+  }
+
+  /* .about-landing {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,11 +35,7 @@ export const StyledAbout = styled.div`
       display: flex;
       flex-direction: column;
 
-      .img-wrapper {
-        position: relative;
-        width: 100%;
-        height: 500px;
-      }
+      
     }
 
     .box {
@@ -100,5 +120,5 @@ export const StyledAbout = styled.div`
     h2 {
       margin-bottom: 150px;
     }
-  }
+  } */
 `;

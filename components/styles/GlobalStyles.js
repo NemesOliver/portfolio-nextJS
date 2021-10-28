@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     h2 {
-        font-size: 4.5rem;  /* 72px */
+        font-size: 2.5rem;  /* 72px */
         font-weight: 900;
     }
 
@@ -53,8 +53,12 @@ const GlobalStyles = createGlobalStyle`
         text-align: center;
        }
 
-    .underline {
+    .underline-10 {
         text-decoration: underline 10px solid ${({ theme }) => theme.primary};
+    }
+
+    .underline-5 {
+        text-decoration: underline 5px solid ${({ theme }) => theme.primary};
     }
 
     .opacity-50 {

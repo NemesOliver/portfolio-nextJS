@@ -8,7 +8,7 @@ const Project = ({ project, index }) => {
       <Flex direction="column">
         <Flex direction="column">
           <div>
-            <h1 className="underline">{`${index + 1}. ${project.name}`}</h1>
+            <h1 className="underline-10">{`${index + 1}. ${project.name}`}</h1>
             <h3 className="opacity-50">{project.type}</h3>
           </div>
           <ul>

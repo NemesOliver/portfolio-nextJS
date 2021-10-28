@@ -5,13 +5,13 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         box-sizing: border-box;
+        padding: 0;
+        margin: 0;
     }
 
     html,
     body {
         position: relative;
-        padding: 0;
-        margin: 0;
         font-family: Montserrat;
         background-color: ${({ theme }) => theme.backgroundColor};
         color: ${({ theme }) => theme.color};
@@ -71,8 +71,8 @@ const GlobalStyles = createGlobalStyle`
     width: 70%;
     height: 3px;
     background: ${({ theme }) => theme.primary};
-    margin: 0 auto;
-    margin-bottom: 150px;
+    margin: 150px auto;
+    
   }
 
     body::-webkit-scrollbar {

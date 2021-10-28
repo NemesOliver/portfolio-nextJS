@@ -17,7 +17,7 @@ export default function Home() {
         <title>Oliver Nemes - Home</title>
       </Head>
       <StyledHome>
-        <Section>
+        <Section fullPage="90vh">
           <Flex direction="column" switch="row-reverse">
             <div className="img-hackers-mind">
               <Image
@@ -37,7 +37,7 @@ export default function Home() {
             </Flex>
           </Flex>
         </Section>
-        <Section>
+        <Section fullPage="90vh">
           <div className="box">
             <h2>
               <span className="function">function</span>
@@ -71,10 +71,10 @@ export default function Home() {
                 integer accumsan, aliquam odio vitae quis diam porta metus.
                 Viverra tellus neque vitae ut at pellentesque...
               </p>
-              <Link href="/about" passHref>
-                <StyledLink>&#8594; LEARN MORE</StyledLink>
-              </Link>
             </Flex>
+            <Link href="/about" passHref>
+              <StyledLink bottom="-80px">&#8594; LEARN MORE</StyledLink>
+            </Link>
           </Flex>
         </Section>
         <div className="hr"></div>

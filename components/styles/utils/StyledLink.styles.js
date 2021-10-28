@@ -6,7 +6,7 @@ export const StyledLink = styled.a`
   font-size: 1.5rem;
   font-weight: bold;
   position: absolute;
-  bottom: -150px;
+  bottom: ${(props) => props.bottom || 0};
   right: 0;
 
   &:hover {

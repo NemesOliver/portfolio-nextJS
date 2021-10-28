@@ -14,7 +14,7 @@ const about = () => {
         <title>Oliver Nemes - About</title>
       </Head>
       <StyledAbout>
-        <Section>
+        <Section fullPage="90vh">
           <Flex direction="column">
             <Flex direction="column">
               <h2>A LITTLE BIT ABOUT MYSELF...</h2>

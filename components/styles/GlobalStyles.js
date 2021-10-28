@@ -45,9 +45,23 @@ const GlobalStyles = createGlobalStyle`
         line-height: 185%;
     }
 
+    li {
+        padding-bottom: 0.5em;
+    }
+
     h1, h2, h3, p{
         text-align: center;
        }
+
+    .underline {
+        text-decoration: underline 10px solid ${({ theme }) => theme.primary};
+    }
+
+    .opacity-50 {
+        opacity: 50%;
+     }
+
+  
 
     .hr {
     width: 70%;

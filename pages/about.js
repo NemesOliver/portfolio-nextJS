@@ -114,7 +114,7 @@ const about = () => {
             </Flex>
           </Flex>
         </Section>
-
+        <div className="hr"></div>
         <Section>
           <Flex direction="column">
             <div className="img-advanced">

@@ -91,6 +91,20 @@ const GlobalStyles = createGlobalStyle`
        h1 {
            font-size: 4.5rem;
        }
+
+       h2 {
+        font-size: 3.5rem;
+       }
+    }
+
+    @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+       h1 {
+           font-size: 5.5rem;
+       }
+
+       h2 {
+        font-size: 4.5rem;
+       }
     }
 
     @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {

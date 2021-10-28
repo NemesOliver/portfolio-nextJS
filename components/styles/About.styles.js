@@ -44,4 +44,27 @@ export const StyledAbout = styled.div`
       }
     }
    */
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+    .box {
+      background: rgba(63, 61, 86, 0.3);
+      padding: 40px 60px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    .img-about-thinker {
+      height: 400px;
+    }
+
+    .img-basic {
+      height: 400px;
+    }
+
+    .img-advanced {
+      height: 400px;
+    }
+  } ;
 `;

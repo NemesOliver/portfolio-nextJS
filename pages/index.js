@@ -37,23 +37,27 @@ export default function Home() {
             </Flex>
           </Flex>
         </Section>
-        <Section fullPage="90vh">
-          <div className="box">
-            <h2>
-              <span className="function">function</span>
-              <span className="blue">sayHello</span>(
-              <span className="argument">name</span> ) &#123;
-              <br />
-              &#160; &#160; return `Hi my name is $&#123;
-              <span className="argument">name</span> &#125;`
-              <br /> &#125;
-              <br />
-              <br /> <span className="blue">sayHello</span>(
-              <span className="blue">“</span>
-              <span className="yellow">Oliver</span>
-              <span className="blue">”</span> );
-            </h2>
+        <Section>
+          <div className="box-wrapper">
+            <div className="box">
+              <h2>
+                <span className="function">function</span>
+                <span className="blue">sayHello</span>(
+                <span className="argument">name</span> ) &#123;
+                <br />
+                &#160; &#160; return `Hi my name is $&#123;
+                <span className="argument">name</span> &#125;`
+                <br /> &#125;
+                <br />
+                <br /> <span className="blue">sayHello</span>(
+                <span className="blue">“</span>
+                <span className="yellow">Oliver</span>
+                <span className="blue">”</span> );
+              </h2>
+            </div>
           </div>
+        </Section>
+        <Section fullPage="90vh">
           <Flex direction="column">
             <div className="img-person-pc">
               <Image

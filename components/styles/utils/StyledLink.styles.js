@@ -13,4 +13,8 @@ export const StyledLink = styled.a`
     opacity: 100%;
     transition: 0.5s all ease;
   }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    bottom: -80px;
+  }
 `;

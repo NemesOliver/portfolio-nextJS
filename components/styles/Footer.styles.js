@@ -10,7 +10,7 @@ export const Footer = styled.footer`
 
   .footer-img {
     position: relative;
-    height: 300px;
+    height: 600px;
     width: 100%;
   }
 `;

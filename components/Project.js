@@ -1,31 +1,33 @@
-import { StyledSection } from "../components/styles/Project.styles";
+import { Section } from "../components/styles/Section.styles";
+import Flex from "../components/styles/utils/Flex.styles";
+import { StyledDropdown } from "../components/styles/utils/Dropdown.styles";
 
 const Project = ({ project, index }) => {
   return (
-    <StyledSection key={index}>
-      <div className="content-wrapper">
-        <div className="info">
+    <Section key={index}>
+      <Flex direction="column">
+        <Flex direction="column">
           <div>
-            <h1>{`${index + 1}. ${project.name}`}</h1>
-            <h3>{project.type}</h3>
+            <h1 className="underline">{`${index + 1}. ${project.name}`}</h1>
+            <h3 className="opacity-50">{project.type}</h3>
           </div>
           <ul>
-            {project.build.map((entry, index) => (
-              <li key={index}>{entry}</li>
+            {project.build.map((li, index) => (
+              <li key={index}>{li}</li>
             ))}
           </ul>
-        </div>
-        <div className="description">
+        </Flex>
+        <div>
           <p>{project.description}</p>
           <br />
           <p>{project.extraContent}</p>
-          <div className="dropdown-wrapper">
+          <StyledDropdown>
             <h3>MORE</h3>
             <span>&#9660;</span>
-          </div>
+          </StyledDropdown>
         </div>
-      </div>
-    </StyledSection>
+      </Flex>
+    </Section>
   );
 };
 

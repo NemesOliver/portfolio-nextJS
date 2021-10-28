@@ -77,19 +77,22 @@ const about = () => {
                 ullamcorper integer purus in suspendisse. Dui luctus amet sit
                 nunc ullamcorper .
               </p>
-              <div className="picture"></div>
+              <Flex direction="column">
+                <div className="picture"></div>
+
+                <div className="text">
+                  <h2>
+                    YUP! <br /> THAT’S <br /> ME...
+                  </h2>
+                  <h2>ALRIGHT...</h2>
+                </div>
+              </Flex>
             </Flex>
-            <div className="text">
-              <h2>
-                YUP! <br /> THAT’S <br /> ME...
-              </h2>
-              <h2>ALRIGHT...</h2>
-            </div>
           </Flex>
         </Section>
         <div className="hr"></div>
         <h2 className="underline-5">SO WHAT DO I KNOW?</h2>
-        <Section>
+        <Section fullPage="70vh">
           <Flex direction="column">
             <div className="img-basic">
               <Image

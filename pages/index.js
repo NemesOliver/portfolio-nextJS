@@ -17,7 +17,7 @@ export default function Home() {
         <title>Oliver Nemes - Home</title>
       </Head>
       <StyledHome>
-        <Section fullPage="90vh">
+        <Section fullPage="100vh">
           <Flex direction="column" switch="row-reverse">
             <div className="img-hackers-mind">
               <Image

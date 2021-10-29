@@ -1,9 +1,33 @@
-import Link from "next/link";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 import { Section } from "../components/styles/Section.styles";
 import Flex from "../components/styles/utils/Flex.styles";
 import { StyledDropdown } from "../components/styles/utils/Dropdown.styles";
-import { useState } from "react";
+
+const dropdownVariants = {
+  hidden: {
+    opacity: 0,
+    scale: 0.95,
+    y: "-25px",
+  },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.95,
+    y: "-25px",
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 
 const Project = ({ project, index }) => {
   const {
@@ -51,30 +75,38 @@ const Project = ({ project, index }) => {
                     {open ? <span>&#9650;</span> : <span>&#9660;</span>}
                   </div>
                 </Flex>
-                {open && (
-                  <div className="options-wrapper">
-                    {source && (
-                      <a
-                        href={source}
-                        target="_blank"
-                        rel="noreferrer"
-                        onClick={closeDropdown}
-                      >
-                        VIEW SOURCE
-                      </a>
-                    )}
-                    {live && (
-                      <a
-                        href={live}
-                        target="_blank"
-                        rel="noreferrer"
-                        onClick={closeDropdown}
-                      >
-                        VIEW LIVE
-                      </a>
-                    )}
-                  </div>
-                )}
+                <AnimatePresence>
+                  {open && (
+                    <motion.div
+                      variants={dropdownVariants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                      className="options-wrapper"
+                    >
+                      {source && (
+                        <a
+                          href={source}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={closeDropdown}
+                        >
+                          VIEW SOURCE
+                        </a>
+                      )}
+                      {live && (
+                        <a
+                          href={live}
+                          target="_blank"
+                          rel="noreferrer"
+                          onClick={closeDropdown}
+                        >
+                          VIEW LIVE
+                        </a>
+                      )}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             </StyledDropdown>
           </Flex>

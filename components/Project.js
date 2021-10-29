@@ -1,9 +1,19 @@
+import Link from "next/link";
+import styled from "styled-components";
 import { Section } from "../components/styles/Section.styles";
 import Flex from "../components/styles/utils/Flex.styles";
 import { StyledDropdown } from "../components/styles/utils/Dropdown.styles";
-import styled from "styled-components";
+import { useState } from "react";
 
 const Project = ({ project, index }) => {
+  const {
+    links: { source, live },
+  } = project;
+  const [open, setOpen] = useState(false);
+
+  const toggleDropdown = () => setOpen(!open);
+  const closeDropdown = () => setOpen(false);
+
   return (
     <Section fullPage="90vh" key={index}>
       <StyledProjectsPage>
@@ -31,8 +41,41 @@ const Project = ({ project, index }) => {
             <br />
             <p>{project.extraContent}</p>
             <StyledDropdown>
-              <h3>MORE</h3>
-              <span>&#9660;</span>
+              <div>
+                <Flex>
+                  <div
+                    className="dropdown-button"
+                    onClick={() => toggleDropdown()}
+                  >
+                    <h3>MORE</h3>
+                    {open ? <span>&#9650;</span> : <span>&#9660;</span>}
+                  </div>
+                </Flex>
+                {open && (
+                  <div className="options-wrapper">
+                    {source && (
+                      <a
+                        href={source}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={closeDropdown}
+                      >
+                        VIEW SOURCE
+                      </a>
+                    )}
+                    {live && (
+                      <a
+                        href={live}
+                        target="_blank"
+                        rel="noreferrer"
+                        onClick={closeDropdown}
+                      >
+                        VIEW LIVE
+                      </a>
+                    )}
+                  </div>
+                )}
+              </div>
             </StyledDropdown>
           </Flex>
         </Flex>

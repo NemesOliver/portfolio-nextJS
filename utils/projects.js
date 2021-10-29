@@ -7,6 +7,10 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
     extraContent:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing non id in faucibus nisi, velit. Semper urna, amet pellentesque in sapien, scelerisque a lectus placerat.",
+    links: {
+      source: "https://github.com/NemesOliver/full-stack-prep-list-app",
+      live: "https://prep-list-demo.herokuapp.com/",
+    },
   },
   {
     name: "STREAMY",
@@ -16,6 +20,10 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
     extraContent:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing non id in faucibus nisi, velit. Semper urna, amet pellentesque in sapien, scelerisque a lectus placerat.",
+    links: {
+      source: "https://github.com/NemesOliver/streams",
+      live: "",
+    },
   },
   {
     name: "PORTFOLIO",
@@ -25,5 +33,9 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
     extraContent:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing non id in faucibus nisi, velit. Semper urna, amet pellentesque in sapien, scelerisque a lectus placerat.",
+    links: {
+      source: "https://github.com/NemesOliver/portfolio-nextJS",
+      live: "",
+    },
   },
 ];

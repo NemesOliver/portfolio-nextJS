@@ -64,6 +64,24 @@ const Navbar = () => {
               <div onClick={() => closeMenu()}>
                 <Link href="/work">MY WORK</Link>
               </div>
+              <div className="socials-mobile">
+                {icons.map(({ href, src, altTag }, index) => (
+                  <a
+                    className="icon"
+                    key={index}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src={`/assets/${src}`}
+                      alt={altTag}
+                      height="25"
+                      width="25"
+                    />
+                  </a>
+                ))}
+              </div>
             </div>
           )}
           <Image

@@ -16,7 +16,7 @@ export const Nav = styled.nav`
   .logo {
     color: ${({ theme }) => theme.color};
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     width: 100%;
     display: flex;
@@ -43,6 +43,12 @@ export const Nav = styled.nav`
       &:active {
         transform: scale(0.95);
       }
+    }
+
+    &-mobile {
+      display: none;
+      flex-direction: row;
+      /* margin-top: 0.5rem; */
     }
   }
 
@@ -95,7 +101,7 @@ export const Nav = styled.nav`
 
   /* MEDIA QUERIES */
 
-  @media all and (max-width: 830px) {
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     .sliding-menu {
       flex-direction: column;
       height: 150px;
@@ -103,9 +109,13 @@ export const Nav = styled.nav`
       right: 0 !important;
       align-items: center;
     }
+
+    .socials-mobile {
+      display: flex;
+    }
   }
 
-  @media all and (max-width: 660px) {
+  @media all and (max-width: ${({ theme }) => theme.breakpoints.sm}) {
     .socials {
       opacity: 0;
       pointer-events: none;

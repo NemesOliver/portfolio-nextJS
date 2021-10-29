@@ -147,7 +147,7 @@ const about = () => {
         <h2 style={{ textAlign: "center" }}>
           THINGS I WANT TO <br /> LEARN NEXT...
         </h2>
-        <Section>
+        <Section fullPage="60vh">
           <CardContainer>
             {aboutCards.map(({ mainText, title, description }, index) => (
               <Card

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   h2 {
     font-size: 4.5rem;
@@ -10,7 +10,13 @@ export const Footer = styled.footer`
 
   .footer-img {
     position: relative;
-    height: 600px;
+    height: 400px;
     width: 100%;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
+    .footer-img {
+      height: 800px;
+    }
   }
 `;

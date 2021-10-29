@@ -66,5 +66,38 @@ export const StyledAbout = styled.div`
     .img-advanced {
       height: 400px;
     }
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
+    ul {
+      margin-left: 1rem;
+    }
+
+    .img-about-thinker {
+      height: 400px;
+    }
+
+    .img-basic {
+      height: 250px;
+    }
+
+    .img-advanced {
+      height: 300px;
+    }
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xxLg}) {
+    .img-about-thinker {
+      height: 300px;
+      width: 400px;
+    }
+
+    .img-basic {
+      height: 300px;
+    }
+
+    .img-advanced {
+      height: 500px;
+    }
   } ;
 `;

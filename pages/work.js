@@ -10,7 +10,10 @@ const work = () => {
       </Head>
       <div>
         {projects.map((project, index) => (
-          <Project key={index} project={project} index={index} />
+          <>
+            <Project key={index} project={project} index={index} />
+            <div className="hr"></div>
+          </>
         ))}
       </div>
     </>

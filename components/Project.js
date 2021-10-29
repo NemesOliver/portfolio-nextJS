@@ -5,10 +5,10 @@ import styled from "styled-components";
 
 const Project = ({ project, index }) => {
   return (
-    <Section fullPage="100vh" key={index}>
+    <Section fullPage="90vh" key={index}>
       <StyledProjectsPage>
-        <Flex direction="column">
-          <Flex direction="column">
+        <Flex direction="column" switch="row" align="flex-start">
+          <Flex direction="column" align="flex-start" lgAlign="flex-start">
             <div>
               <h1 className="underline-10">{`${index + 1}. ${
                 project.name
@@ -21,7 +21,12 @@ const Project = ({ project, index }) => {
               ))}
             </ul>
           </Flex>
-          <div>
+          <Flex
+            direction="column"
+            align="flex-end"
+            width="70%"
+            lgAlign="flex-end"
+          >
             <p>{project.description}</p>
             <br />
             <p>{project.extraContent}</p>
@@ -29,7 +34,7 @@ const Project = ({ project, index }) => {
               <h3>MORE</h3>
               <span>&#9660;</span>
             </StyledDropdown>
-          </div>
+          </Flex>
         </Flex>
       </StyledProjectsPage>
     </Section>
@@ -44,6 +49,18 @@ const StyledProjectsPage = styled.div`
 
   ul {
     margin: 2rem 0;
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+    ul {
+      margin-left: 1rem;
+    }
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
+    h1 {
+      margin-top: -1rem;
+    }
   }
 `;
 

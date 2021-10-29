@@ -27,9 +27,10 @@ export const StyledHome = styled.div`
     position: relative;
     width: 300px;
     height: 300px;
+    margin-top: 2rem;
   }
 
-  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {  
     .img-hackers-mind {
       height: 400px;
     }
@@ -67,6 +68,37 @@ export const StyledHome = styled.div`
       h2 {
         font-size: 2.5rem;
       }
+    }
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
+    h1 {
+      margin: 0 0 2rem 0;
+      text-align: left;
+    }
+
+    .box {
+      h2 {
+        font-size: 3.1rem;
+      }
+    }
+  }
+
+  @media all and (min-width: ${({ theme }) => theme.breakpoints.xxLg}) {
+    .img-hackers-mind {
+      height: 500px;
+    }
+
+    .box {
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+
+    .img-person-pc {
+      position: relative;
+      width: 450px;
+      height: 450px;
     }
   }
 `;

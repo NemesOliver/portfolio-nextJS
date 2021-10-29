@@ -99,7 +99,7 @@ const GlobalStyles = createGlobalStyle`
 
     @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
        h1 {
-           font-size: 5.5rem;
+           font-size: 5rem;
        }
 
        h2 {
@@ -107,14 +107,17 @@ const GlobalStyles = createGlobalStyle`
        }
     }
 
-    @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
-        h1, h2, h3, p{
+    @media all and (min-width: ${({ theme }) => theme.breakpoints.lg}) {
+         h2, h3, p{
         text-align: left;
        }
+    }
 
-       h1 {
-           font-size: 5rem;
-       }
+    @media all and (min-width: ${({ theme }) => theme.breakpoints.xxLg}) {
+      
+        h1 {
+            font-size: 6rem; 
+        }
     }
 
 `;

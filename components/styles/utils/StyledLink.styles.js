@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledLink = styled.a`
+  z-index: 2;
   color: #ffffff;
   opacity: 50%;
   font-size: 1.5rem;

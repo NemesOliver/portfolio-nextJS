@@ -17,8 +17,8 @@ export default function Home() {
         <title>Oliver Nemes - Home</title>
       </Head>
       <StyledHome>
-        <Section fullPage="100vh">
-          <Flex direction="column" switch="row-reverse">
+        <Section fullPage="90vh">
+          <Flex direction="column" switch="row-reverse" align="flex-start">
             <div className="img-hackers-mind">
               <Image
                 src="/assets/landing_image.svg"
@@ -26,7 +26,7 @@ export default function Home() {
                 layout="fill"
               />
             </div>
-            <Flex direction="column">
+            <Flex direction="column" align="flex-start">
               <h1>FRONTEND DEVELOPER</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -42,15 +42,15 @@ export default function Home() {
             <div className="box">
               <h2>
                 <span className="function">function</span>
-                <span className="blue">sayHello</span>(
-                <span className="argument">name</span> ) &#123;
+                <span className="blue"> sayHello</span>(
+                <span className="argument"> name</span> ) &#123;
                 <br />
                 &#160; &#160; return `Hi my name is $&#123;
-                <span className="argument">name</span> &#125;`
+                <span className="argument"> name</span> &#125;`
                 <br /> &#125;
                 <br />
                 <br /> <span className="blue">sayHello</span>(
-                <span className="blue">“</span>
+                <span className="blue"> “</span>
                 <span className="yellow">Oliver</span>
                 <span className="blue">”</span> );
               </h2>
@@ -58,7 +58,12 @@ export default function Home() {
           </div>
         </Section>
         <Section fullPage="90vh">
-          <Flex direction="column">
+          <Flex
+            direction="column"
+            switch="row"
+            justify="space-between"
+            align="flex-start"
+          >
             <div className="img-person-pc">
               <Image
                 src="/assets/person_pc.svg"
@@ -66,7 +71,7 @@ export default function Home() {
                 layout="fill"
               />
             </div>
-            <Flex direction="column">
+            <Flex direction="column" width="50%" align="flex-start">
               <h3>Hi my name is Oliver</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
@@ -82,7 +87,7 @@ export default function Home() {
           </Flex>
         </Section>
         <div className="hr"></div>
-        <Section>
+        <Section fullPage="90vh">
           <CardContainer>
             {homeCards.map(({ title, description, image }, index) => (
               <Card

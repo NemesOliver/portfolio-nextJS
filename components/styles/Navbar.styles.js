@@ -48,7 +48,7 @@ export const Nav = styled.nav`
     &-mobile {
       display: none;
       flex-direction: row;
-      /* margin-top: 0.5rem; */
+      margin-top: 0.5rem;
     }
   }
 
@@ -68,6 +68,7 @@ export const Nav = styled.nav`
       border: 3px solid ${({ theme }) => theme.primary};
       border-radius: 5px;
       padding: 5px 30px;
+      min-width: 250px;
 
       a {
         font-size: 1.125rem;
@@ -108,6 +109,7 @@ export const Nav = styled.nav`
       top: 44px;
       right: 0 !important;
       align-items: center;
+      min-height: 200px;
     }
 
     .socials-mobile {

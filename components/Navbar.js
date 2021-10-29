@@ -76,8 +76,8 @@ const Navbar = () => {
                     <Image
                       src={`/assets/${src}`}
                       alt={altTag}
-                      height="25"
-                      width="25"
+                      height="30"
+                      width="30"
                     />
                   </a>
                 ))}

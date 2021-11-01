@@ -10,6 +10,10 @@ const StyledCard = styled.div`
     text-align: center;
   }
 
+  h3 {
+    margin-bottom: 1.5rem;
+  }
+
   @media all and (max-width: ${({ theme }) => theme.breakpoints.lg}) {
     width: 100%;
     margin-bottom: 8rem;

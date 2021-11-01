@@ -62,8 +62,9 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="socials">
-        {icons.map(({ href, src, altTag }, index) => (
+        {icons.map(({ href, src, altTag, aria }, index) => (
           <a
+            aria-label={aria}
             className="icon"
             key={index}
             href={href}

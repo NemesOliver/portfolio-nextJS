@@ -4,9 +4,9 @@ export const projects = [
     type: "FULLSTACK",
     build: ["React", "Material UI", "Node", "Express", "MongoDB"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
+      "My most ambitious project build. The idea was to digitalize our pen & paper 'preplist' we used at work. With extra features such as prep level recomendations.",
     extraContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing non id in faucibus nisi, velit. Semper urna, amet pellentesque in sapien, scelerisque a lectus placerat.",
+      "I have build my own backend with Node/Express and deployed it on Heroku. Frontend was build with React and MaterialUI. Result was Fullstack CRUD SPA",
     links: {
       source: "https://github.com/NemesOliver/full-stack-prep-list-app",
       live: "https://prep-list-demo.herokuapp.com/",
@@ -15,11 +15,11 @@ export const projects = [
   {
     name: "STREAMY",
     type: "FRONTEND",
-    build: ["React", "Semantic UI", "GoogleOAuth", "Json-server"],
+    build: ["React", "Semantic UI", "GoogleOAuth", "Flv.js", "Json-server"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
+      "An interesting project that takes idea from popular streaming platform Twitch. Stream your screen and share it with others.",
     extraContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing non id in faucibus nisi, velit. Semper urna, amet pellentesque in sapien, scelerisque a lectus placerat.",
+      "React application utilizing Redux and class based components with Google OAuth. Also using Flv.js to interact with OBS",
     links: {
       source: "https://github.com/NemesOliver/streams",
       live: "",
@@ -30,9 +30,9 @@ export const projects = [
     type: "FRONTEND",
     build: ["NextJS", "Styled-Components", "Framer-motion", "Custom Design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit Adipiscing non id in faucibus nisi, velit. Semper urna, ametpellentesque in sapien, scelerisque a lectus placerat.",
+      "Personal portfolio to showcase my projects and skills i aquired so far. A fun project with custom design",
     extraContent:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing non id in faucibus nisi, velit. Semper urna, amet pellentesque in sapien, scelerisque a lectus placerat.",
+      "My main focus was SEO and speed so i chose NextJS for this, along with Styled-components. Designed in Figma by myself.",
     links: {
       source: "https://github.com/NemesOliver/portfolio-nextJS",
       live: "",

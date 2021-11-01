@@ -1,29 +1,29 @@
 const homeCards = [
   {
-    title: "I LOVE REACT",
+    title: "EVERYTHING REACT",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vitaeeget id libero a.",
+      "My focus is on building single page applications with React and NextJS.",
     image: {
       src: "/assets/react_card.svg",
       alt: "react card",
     },
   },
   {
-    title: "RESPONSIVE DESIGN",
+    title: "LIGHTHOUSE",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vitaeeget id libero a.",
+      "Monitoring SEO, performance and accessibility with tools like Lighthouse and Next/Vercel analytics.",
     image: {
-      src: "/assets/responsive_design.svg",
-      alt: "responsive design",
+      src: "/assets/lighthouse.svg",
+      alt: "lighthouse",
     },
   },
   {
-    title: "DUNNO YET",
+    title: "RESPONSIVE DESIGN",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet, vitaeeget id libero a.",
+      "Building with 'mobile first' approach in mind to ensure smooth user experience.",
     image: {
-      src: "/assets/dreamer_image.svg",
-      alt: "dreamer",
+      src: "/assets/responsive_design.svg",
+      alt: "responsive design",
     },
   },
 ];

@@ -109,9 +109,10 @@ const about = () => {
               </h2>
               <ul>
                 <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>JavaScript / ES6</li>
+                <li>React</li>
+                <li>Redux</li>
               </ul>
             </Flex>
           </Flex>
@@ -131,13 +132,18 @@ const about = () => {
                 AND NOW ON TO THE <br /> GOOD STUFF!
               </h2>
               <ul>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
-                <li>HTML 5</li>
+                <li>Npm & Yarn</li>
+                <li>Git</li>
+                <li>CSS modules, SASS, Styled-components</li>
+                <li>Material UI, Bootstrap, Semantic UI</li>
+                <li>Framer Motion</li>
+                <li>Fetch API, Axios</li>
+                <li>Test API with Postman</li>
+                <li>Routing</li>
+                <li>NextJS, SSG, SSR</li>
+                <li>Heroku and Vercel deployment</li>
+                <li>Figma</li>
+                <li>A bit of Node, Express, Mongoose, and MongoDB</li>
               </ul>
             </Flex>
           </Flex>

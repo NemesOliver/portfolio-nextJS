@@ -29,9 +29,9 @@ export default function Home() {
             <Flex direction="column" align="flex-start">
               <h1>FRONTEND DEVELOPER</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-                duis enim ac quis curabitur mauris id viverra. Mi volutpat duis
-                in posuere est, eleifend.
+                Based in Warwickshire, UK. <br />I specialize in building fast,
+                smooth and responsive single page applications with a help of
+                React and NextJS.
               </p>
               <Button content="MY WORK" to="/work" />
             </Flex>

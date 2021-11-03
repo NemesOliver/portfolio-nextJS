@@ -28,10 +28,10 @@ class MyDocument extends Document {
       sheet.seal();
     }
   }
-  
+
   render() {
     return (
-      <Html>
+      <Html lang="en-gb">
         <Head>
           <meta
             name="keywords"

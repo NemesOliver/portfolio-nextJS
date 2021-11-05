@@ -4,7 +4,7 @@ export const projects = [
     type: "FULLSTACK",
     build: ["React", "Material UI", "Node", "Express", "MongoDB"],
     description:
-      "My most ambitious project build. The idea was to digitalize our pen & paper 'preplist' we used at work. With extra features such as prep level recomendations.",
+      "My most ambitious project built. The idea was to digitalize our pen & paper 'preplist' we used at work. With extra features such as prep level recomendations.",
     extraContent:
       "I have build my own backend with Node/Express and deployed it on Heroku. Frontend was build with React and MaterialUI. Result was Fullstack CRUD SPA",
     links: {
@@ -30,9 +30,9 @@ export const projects = [
     type: "FRONTEND",
     build: ["NextJS", "Styled-Components", "Framer-motion", "Custom Design"],
     description:
-      "Personal portfolio to showcase my projects and skills i aquired so far. A fun project with custom design",
+      "Personal portfolio to showcase my projects and skills I have aquired so far. A fun project with custom design",
     extraContent:
-      "My main focus was SEO and speed so i chose NextJS for this, along with Styled-components. Designed in Figma by myself.",
+      "My main focus was SEO and speed so, I chose NextJS for this, along with Styled-components. Designed in Figma by Myself.",
     links: {
       source: "https://github.com/NemesOliver/portfolio-nextJS",
       live: "",

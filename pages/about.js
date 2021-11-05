@@ -41,7 +41,7 @@ const about = () => {
                   posuere est maecenas. Id tellus, pulvinar vitae, venenatis
                   scelerisque sagittis convallis amet, facilisis. Lacus arcu
                   phasellus lacus in nisi morbi. Dictum cursus risus, ut cursus
-                  urna eu. Consequat vel aliquet pellentesque pretium consequat.{" "}
+                  urna eu. Consequat vel aliquet pellentesque pretium consequat.
                   <br />
                   Orci nulla eu arcu, ante cursus. Fermentum elit est ut semper
                   sed ornare dictum fames. Ac augue pharetra eget nisl sapien
@@ -94,7 +94,7 @@ const about = () => {
         </Section>
         <div className="hr"></div>
         <h2 className="underline-5">SO WHAT DO I KNOW?</h2>
-        <Section fullPage="90vh">
+        <Section fullPage="60vh">
           <Flex direction="column" switch="row">
             <div className="img-basic">
               <Image

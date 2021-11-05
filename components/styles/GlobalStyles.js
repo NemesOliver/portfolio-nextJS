@@ -15,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: Montserrat;
         background-color: ${({ theme }) => theme.backgroundColor};
         color: ${({ theme }) => theme.color};
+        scroll-behavior: smooth;
         /* overflow-x: hidden; */
     }
 

@@ -25,7 +25,7 @@ const menuVariants = {
   hidden: {
     opacity: 0,
     scale: 0.95,
-    x: "50px",
+    x: "15px",
   },
 
   visible: {
@@ -39,7 +39,7 @@ const menuVariants = {
   exit: {
     opacity: 0,
     scale: 0.95,
-    x: "50px",
+    x: "15px",
     transition: {
       duration: 0.5,
     },

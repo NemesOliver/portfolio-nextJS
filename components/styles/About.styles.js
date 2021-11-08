@@ -27,23 +27,16 @@ export const StyledAbout = styled.div`
   }
 
   .picture {
-    max-width: 500px;
-    max-height: 450px;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
     border: 3px solid ${({ theme }) => theme.primary};
   }
-
-  /* 
-    .box {
-      background: rgba(63, 61, 86, 0.3);
-      padding: 40px 60px;
-      width: 45%;
-      height: 100%;
-
-      p {
-        line-height: 185%;
-      }
-    }
-   */
+  /* .picture-text {
+    width: 33%;
+  } */
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     .box {

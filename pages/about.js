@@ -29,29 +29,21 @@ const about = () => {
             <Flex direction="column" width="50%">
               <div className="box">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Bibendum a, scelerisque et, volutpat lobortis aliquet. Aliquet
-                  dignissim quis adipiscing nulla tempus, cursus. Hac arcu
-                  tristique mauris erat. In nunc neque elit massa tellus iaculis
-                  cras aliquam.
+                  IT became a passion of mine when I was 13. <br /> My first
+                  computer I owned was gifted to me as a Christmas present.
+                  Within the first two weeks I disassembled it out of curiosity
+                  and during the process of re-building it, it then became
+                  faulty... Oops. <br />
                   <br />
-                  Et nisi, enim et fringilla platea. Pellentesque turpis risus
-                  massa urna cras malesuada eu enim sed. Vestibulum est
-                  malesuada tortor vel et est auctor odio. Quis aliquet feugiat
-                  posuere est maecenas. Id tellus, pulvinar vitae, venenatis
-                  scelerisque sagittis convallis amet, facilisis. Lacus arcu
-                  phasellus lacus in nisi morbi. Dictum cursus risus, ut cursus
-                  urna eu. Consequat vel aliquet pellentesque pretium consequat.
+                  Within one week, I fixed it! It was inevitable that I’d find
+                  interest in a software. <br /> Eventually I decided to build a
+                  game without even knowing where to start, I know... great
+                  idea! This resulted into a simple game. Control the ball and
+                  collect ten items. <br /> Regardless of my lack of knowledge,
+                  I achieved exactly what I’ve set out to do. Kind of... <br />
                   <br />
-                  Orci nulla eu arcu, ante cursus. Fermentum elit est ut semper
-                  sed ornare dictum fames. Ac augue pharetra eget nisl sapien
-                  porta nunc ac et. Vitae odio convallis convallis sit
-                  consectetur pellentesque ut. Fusce varius lacus, vel tempus,
-                  in. <br />
-                  Posuere vel ac porttitor enim aliquam ut gravida. Enim posuere
-                  aliquet porttitor nunc. Lobortis proin diam sed ut cursus
-                  interdum sit. Ut diam sit convallis ultricies volutpat ipsum
-                  elit.
+                  Life then got in the way and I found I had a lot less time to
+                  focus on my passion.
                 </p>
               </div>
             </Flex>
@@ -66,21 +58,28 @@ const about = () => {
         <Section>
           <Flex direction="column">
             <Flex direction="column-reverse" switch="row">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Lobortis tincidunt sed in mi enim. Nisi in etiam ultricies sem
-                elit urna. Ipsum orci in tristique nec convallis nulla placerat
-                eu vel. Turpis neque vel ipsum commodo amet lectus diam. Lorem
-                sed aliquam parturient a praesent fermentum urna, phasellus
-                vitae. Risus, quam nec cursus ac. Gravida tincidunt lobortis
-                consectetur blandit. Morbi congue tellus ac ipsum imperdiet dis.
-                Sit sit nisl, et aliquet integer. Ut diam eros nunc id praesent
-                vitae proin suspendisse porttitor. Dui luctus amet sit nunc
-                ullamcorper integer purus in suspendisse. Dui luctus amet sit
-                nunc ullamcorper .
+              <p className="picture-text">
+                Code began to haunt me once again. This time it was different. I
+                was dedicated, determined and had a clear “Plan of Attack”.
+                Whilst working a full-time job, I invested all my spare time
+                into learning. Quick thinking, Adaptable and Reliable leader in
+                my work time. Passionate, hungry to learn Geek in my spare time.
+                I was living two lives.... Just like Batman. During my double
+                life, I picked up many skills and decided to put all my
+                attention towards coding. From simple static websites to later
+                discovering React and web apps, suddenly everything was
+                possible. I am now in a stage where I can utilize my skills,
+                work with a team who share my passion and motivation whilst
+                continuing to work on my development.
               </p>
               <Flex direction="column" switch="row">
-                <div className="picture"></div>
+                <div className="picture">
+                  <Image
+                    alt="picture of author"
+                    layout="fill"
+                    src="/assets/picture_profile.webp"
+                  />
+                </div>
 
                 <div className="text">
                   <h2>

@@ -37,6 +37,7 @@ class MyDocument extends Document {
             name="keywords"
             content="Portfolio, Frontend Developer, React Developer"
           />
+          <meta name="description" content="Passionate frontend developer, building beautiful websites and web apps."/>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"

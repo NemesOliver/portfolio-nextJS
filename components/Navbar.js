@@ -75,7 +75,7 @@ const Navbar = () => {
           </a>
         ))}
       </div>
-      <div className="menu-icon">
+      <div className="menu-icon" aria-label="menu button" role="button">
         <div className="menu-wrapper">
           <AnimatePresence>
             {open && (

@@ -5,6 +5,10 @@ export const StyledAbout = styled.div`
     margin-bottom: 2.5rem;
   }
 
+  ul {
+    margin-left: 1.5rem;
+  }
+
   .img-about-thinker {
     position: relative;
     width: 100%;
@@ -28,15 +32,16 @@ export const StyledAbout = styled.div`
 
   .picture {
     position: relative;
-    width: 400px;
-    height: 400px;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     overflow: hidden;
     border: 3px solid ${({ theme }) => theme.primary};
   }
-  /* .picture-text {
-    width: 33%;
-  } */
+  .picture-text {
+    width: 100%;
+  }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.md}) {
     .box {
@@ -63,7 +68,7 @@ export const StyledAbout = styled.div`
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.xLg}) {
     ul {
-      margin-left: 1rem;
+      margin-left: 1.5rem;
     }
 
     .img-about-thinker {
@@ -77,6 +82,22 @@ export const StyledAbout = styled.div`
     .img-advanced {
       height: 300px;
     }
+
+    .picture {
+      width: 400px;
+      height: 400px;
+    }
+
+    .box-2 {
+      background: rgba(63, 61, 86, 0.3);
+      padding: 40px 60px;
+      width: 80%;
+      height: 100%;
+    }
+
+    /* .picture-text {
+      width: 75%;
+    } */
   }
 
   @media all and (min-width: ${({ theme }) => theme.breakpoints.xxLg}) {
@@ -91,6 +112,13 @@ export const StyledAbout = styled.div`
 
     .img-advanced {
       height: 500px;
+    }
+
+    .box-2 {
+      background: rgba(63, 61, 86, 0.3);
+      padding: 40px 60px;
+      width: 70%;
+      height: 100%;
     }
   } ;
 `;

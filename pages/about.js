@@ -57,22 +57,25 @@ const about = () => {
         </Flex>
         <Section>
           <Flex direction="column">
-            <Flex direction="column-reverse" switch="row">
-              <p className="picture-text">
-                Code began to haunt me once again. This time it was different. I
-                was dedicated, determined and had a clear “Plan of Attack”.
-                Whilst working a full-time job, I invested all my spare time
-                into learning. Quick thinking, Adaptable and Reliable leader in
-                my work time. Passionate, hungry to learn Geek in my spare time.
-                I was living two lives.... Just like Batman. During my double
-                life, I picked up many skills and decided to put all my
-                attention towards coding. From simple static websites to later
-                discovering React and web apps, suddenly everything was
-                possible. I am now in a stage where I can utilize my skills,
-                work with a team who share my passion and motivation whilst
-                continuing to work on my development.
-              </p>
-              <Flex direction="column" switch="row">
+            <Flex direction="column-reverse">
+              <div className="box-2">
+                <p className="picture-text">
+                  Code began to haunt me once again. This time it was different.
+                  I was dedicated, determined and had a clear “Plan of Attack”.
+                  Whilst working a full-time job, I invested all my spare time
+                  into learning. <br /> Quick thinking, Adaptable and Reliable
+                  leader in my work time. Passionate, hungry to learn Geek in my
+                  spare time. I was living two lives.... Just like Batman.{" "}
+                  <br />
+                  During my double life, I picked up many skills and decided to
+                  put all my attention towards coding. From simple static
+                  websites to later discovering React and web apps, suddenly
+                  everything was possible. <br /> I am now in a stage where I
+                  can utilize my skills, work with a team who share my passion
+                  and motivation whilst continuing to work on my development.
+                </p>
+              </div>
+              <Flex direction="column" switch="row" justify="space-evenly">
                 <div className="picture">
                   <Image
                     alt="picture of author"

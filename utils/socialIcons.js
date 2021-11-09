@@ -6,7 +6,7 @@ export const icons = [
     aria: "github link",
   },
   {
-    href: "mailto:nemesoliver@hotmail.com?subject=Sent from Portfolio",
+    href: "mailto:nemesoliver93@gmail.com?subject=Sent from Portfolio",
     src: "mail_icon.svg",
     altTag: "mail icon",
     aria: "mail link",

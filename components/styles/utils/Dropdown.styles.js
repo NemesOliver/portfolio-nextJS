@@ -4,6 +4,7 @@ export const StyledDropdown = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   .dropdown-button {
     display: flex;
@@ -21,6 +22,10 @@ export const StyledDropdown = styled.div`
   }
 
   .options-wrapper {
+    white-space: nowrap;
+    position: absolute;
+    left: -65%;
+
     background-color: #030303;
     display: flex;
     flex-direction: column;

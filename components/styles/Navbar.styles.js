@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
-  z-index: 5;
+  z-index: 10;
   background-color: ${({ theme }) => theme.backgroundColor};
   position: sticky;
   top: 0;
@@ -14,7 +14,17 @@ export const Nav = styled.nav`
   justify-items: center;
   align-items: center;
 
+  .background {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -10vw;
+    width: 100vw;
+    height: 100vh;
+  }
+
   .logo {
+    z-index: 15;
     color: ${({ theme }) => theme.color};
     cursor: pointer;
     font-size: 1.3rem;
@@ -31,6 +41,7 @@ export const Nav = styled.nav`
   .socials {
     width: 100%;
     display: flex;
+    z-index: 15;
     justify-content: center;
     a {
       padding-left: 10px;
@@ -55,6 +66,7 @@ export const Nav = styled.nav`
 
   .menu-wrapper {
     position: relative;
+    z-index: 15;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;

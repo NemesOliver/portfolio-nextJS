@@ -30,7 +30,7 @@ export default function Home() {
               <h1>FRONTEND DEVELOPER</h1>
               <p>
                 Based in Warwickshire, UK. <br />I specialize in building fast,
-                smooth and responsive single page applications with a help of
+                smooth and responsive websites and single page applications with a help of
                 React and NextJS.
               </p>
               <Button content="MY WORK" to="/work" />

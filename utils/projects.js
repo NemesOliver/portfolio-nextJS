@@ -14,7 +14,7 @@ export const projects = [
   },
   {
     name: "STREAMY",
-    type: "FRONT-END",
+    type: "FRONTEND",
     build: ["React", "Semantic UI", "GoogleOAuth", "Flv.js", "Json-server"],
     description:
       "An interesting project that takes idea from popular streaming platform Twitch. Stream your screen and share it with others.",
@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     name: "PORTFOLIO",
-    type: "FRONT-END",
+    type: "FRONTEND",
     build: ["NextJS", "Styled-Components", "Framer-motion", "Custom Design"],
     description:
       "Personal portfolio to showcase my projects and skills I have acquired so far. A fun project with custom design.",

@@ -1,17 +1,17 @@
 /**
  * Flex wrapper
  * @Props => direction => row/column etc...
- *           switch => switch direction on screens with +1200px
+ *           switch => switch direction on screens with > 1200px
  *           align => center/flex-start etc...
  *           justify => center/space-between etc...
- *           width => px/%/vw - Only applies on screens with +1200px
+ *           width => px/%/vw - Only applies on screens with > 1200px
  */
 
 import styled from "styled-components";
 
 const Flex = styled.div`
   position: relative;
-  height: 100%;
+  height: ${(props) => props.flexHeight || "100%"};
   width: 100%;
   display: flex;
   flex-direction: ${(props) => props.direction};

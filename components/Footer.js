@@ -9,8 +9,8 @@ const Footer = () => {
         <Flex direction="column">
           <h2>FIND ME HERE</h2>
           <p>
-            If you’d like to contact me you can do so by clicking the Email icon
-            or alternatively you can find me on Github or LinkedIn.
+            You can find me on LinkedIn, GitHub or you can contact me directly
+            by email. All links can be found in menu.
           </p>
         </Flex>
         <div className="footer-img">

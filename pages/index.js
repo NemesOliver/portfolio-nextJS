@@ -74,11 +74,11 @@ export default function Home() {
             <Flex direction="column" width="50%" align="flex-start">
               <h3>Hi my name is Oliver</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
-                orci ipsum gravida lorem molestie. Accumsan, vitae feugiat
-                ultrices dolor bibendum hac. Et odio lacinia duis duis sed. Nunc
-                integer accumsan, aliquam odio vitae quis diam porta metus.
-                Viverra tellus neque vitae ut at pellentesque...
+                I&#39;m a web developer with experience in HTML5, CSS3,
+                JavaScript and React. I love building great user experiences and
+                work on projects that excite me. I live in a world where
+                everything is a challenge and the best way to overcome them is
+                by learning...
               </p>
             </Flex>
             <Link href="/about" passHref>

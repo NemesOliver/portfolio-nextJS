@@ -22,7 +22,7 @@
 
 - Smooth page transitions.
 - Custom Design. [_See Figma sketch_](https://www.figma.com/file/Qw1VSK0TFSXaBPn616aFfj/Portfolio-example-2?node-id=0%3A1).
-- No CSS libraries used.
+- No CSS libraries used
 
 ## Screenshots
 

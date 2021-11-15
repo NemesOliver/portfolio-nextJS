@@ -17,7 +17,7 @@ export const projects = [
     type: "FRONTEND",
     build: ["React", "Semantic UI", "GoogleOAuth", "Flv.js", "Json-server"],
     description:
-      "An interesting project that takes idea from popular streaming platform Twitch. Stream your screen and share it with others.",
+      "An exciting ideology that is inspired by popular streaming platform Twitch. Stream your screen and share it with others.",
     extraContent:
       "React application utilizing Redux and class-based components with Google OAuth. Also using Flv.js to interact with OBS",
     links: {

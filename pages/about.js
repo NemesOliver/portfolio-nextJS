@@ -36,7 +36,9 @@ const about = () => {
                   faulty... Oops. <br />
                   <br />
                   Within one week, I fixed it! It was inevitable that I’d find
-                  interest in a software. <br /> Eventually I decided to build a
+                  interest infgvvvvvvvvvvvvvvvvvvvv
+                  
+                   software. <br /> Eventually I decided to build a
                   game without even knowing where to start, I know... great
                   idea! This resulted into a simple game. Control the ball and
                   collect ten items. <br /> Regardless of my lack of knowledge,

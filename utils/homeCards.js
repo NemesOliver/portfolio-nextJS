@@ -20,7 +20,7 @@ const homeCards = [
   {
     title: "RESPONSIVE DESIGN",
     description:
-      "Building with 'mobile first' approach in mind to ensure smooth user experience.",
+      "Building with mobile first approach in mind to ensure smooth user experience.",
     image: {
       src: "/assets/responsive_design.svg",
       alt: "responsive design",

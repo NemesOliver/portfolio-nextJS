@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
 import { Section } from "../components/styles/Section.styles";
@@ -34,9 +34,27 @@ const Project = ({ project, index }) => {
     links: { source, live },
   } = project;
   const [open, setOpen] = useState(false);
+  const ref = useRef();
 
   const toggleDropdown = () => setOpen(!open);
   const closeDropdown = () => setOpen(false);
+
+  useEffect(() => {
+    const onBodyClick = (e) => {
+      if (ref.current.contains(e.target)) {
+        return;
+      }
+
+      setOpen(false);
+    };
+
+    document.body.addEventListener("click", onBodyClick, { capture: true });
+
+    return () =>
+      document.body.removeEventListener("click", onBodyClick, {
+        capture: true,
+      });
+  }, []);
 
   return (
     <Section fullPage="90vh" key={index}>
@@ -64,7 +82,7 @@ const Project = ({ project, index }) => {
             <p>{project.description}</p>
             <br />
             <p>{project.extraContent}</p>
-            <StyledDropdown>
+            <StyledDropdown ref={ref}>
               <div>
                 <Flex>
                   <div

@@ -1,5 +1,36 @@
 export const projects = [
   {
+    name: "WINE CLOSET",
+    type: "FRONTEND",
+    build: [
+      "NextJS",
+      "Typescript",
+      "Material UI",
+      "Styled-Components",
+      "Firebase",
+    ],
+    description:
+      "Wine collection application, supporting multiple users, picture upload, adding and rating items...",
+    extraContent: "*** PROJECT IN PROGRESS ***",
+    links: {
+      source: "https://github.com/NemesOliver/wine-rating-app",
+      live: "https://wine-closet.vercel.app",
+    },
+  },
+  {
+    name: "PORTFOLIO",
+    type: "FRONTEND",
+    build: ["NextJS", "Styled-Components", "Framer-motion", "Custom Design"],
+    description:
+      "Personal portfolio to showcase my projects and skills I have acquired so far. A fun project with custom design.",
+    extraContent:
+      "My main focus was SEO and speed so, I chose NextJS for this, along with Styled-components. Designed in Figma by Myself.",
+    links: {
+      source: "https://github.com/NemesOliver/portfolio-nextJS",
+      live: "",
+    },
+  },
+  {
     name: "PREP LIST",
     type: "FULL STACK",
     build: ["React", "Material UI", "Node", "Express", "MongoDB"],
@@ -22,19 +53,6 @@ export const projects = [
       "React application utilizing Redux and class-based components with Google OAuth. Also using Flv.js to interact with OBS",
     links: {
       source: "https://github.com/NemesOliver/streams",
-      live: "",
-    },
-  },
-  {
-    name: "PORTFOLIO",
-    type: "FRONTEND",
-    build: ["NextJS", "Styled-Components", "Framer-motion", "Custom Design"],
-    description:
-      "Personal portfolio to showcase my projects and skills I have acquired so far. A fun project with custom design.",
-    extraContent:
-      "My main focus was SEO and speed so, I chose NextJS for this, along with Styled-components. Designed in Figma by Myself.",
-    links: {
-      source: "https://github.com/NemesOliver/portfolio-nextJS",
       live: "",
     },
   },

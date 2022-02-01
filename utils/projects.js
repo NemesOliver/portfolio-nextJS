@@ -1,20 +1,14 @@
 export const projects = [
   {
-    name: "WINE CLOSET",
-    type: "FRONTEND",
-    build: [
-      "NextJS",
-      "Typescript",
-      "Material UI",
-      "Styled-Components",
-      "Firebase",
-    ],
+    name: "The Unexplained",
+    type: "FRONTEND & CMS",
+    build: ["NextJS", "TailwindCSS", "Cloudinary", "headless CMS (Strapi)", "Google Analytics (gtag.js)"],
     description:
-      "Wine collection application, supporting multiple users, picture upload, adding and rating items...",
-    extraContent: "*** PROJECT IN PROGRESS ***",
+      "JAMstack blog website/PWA I am currently using for documentation and reference. I copied a layout of dev.to forum ( sorry dev.to :D ).",
+    extraContent: "Project is not 100% complete, as I am adding new blogs, and making small changes often.",
     links: {
-      source: "https://github.com/NemesOliver/wine-rating-app",
-      live: "https://wine-closet.vercel.app",
+      source: "https://github.com/NemesOliver/frontend-strapi-blog",
+      live: "https://frontend-strapi-blog.vercel.app/",
     },
   },
   {

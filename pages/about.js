@@ -80,6 +80,7 @@ const about = () => {
                   <Image
                     alt="picture of author"
                     layout="fill"
+                    priority
                     src="/assets/picture_profile.webp"
                   />
                 </div>

@@ -1,11 +1,40 @@
 export const projects = [
   {
+    name: "Bolt Desk",
+    type: "FULLSTACK",
+    build: [
+      "React",
+      "TailwindCSS",
+      "Typescript",
+      "React Query",
+      "Express",
+      "JWT",
+      "Node",
+      "MongoDB",
+    ],
+    description:
+      "Boltdesk is my take on desk booking web application for hybrid workplaces. There is quite a lot going on in this seemingly simple application, such as caching and refetching data with react query, authentication flow and more...",
+    extraContent:
+      "While working on this project I've encountered and solved quite a few CORS related issues, gained better understanding of authentication using JWT, hashing passwords as well as working with Cookies.",
+    links: {
+      source: "https://github.com/NemesOliver/frontend-boltdesk-cra",
+      live: "https://frontend-boltdesk-cra.vercel.app/",
+    },
+  },
+  {
     name: "The Unexplained",
     type: "FRONTEND & CMS",
-    build: ["NextJS", "TailwindCSS", "Cloudinary", "headless CMS (Strapi)", "Google Analytics (gtag.js)"],
+    build: [
+      "NextJS",
+      "TailwindCSS",
+      "Cloudinary",
+      "headless CMS (Strapi)",
+      "Google Analytics (gtag.js)",
+    ],
     description:
       "JAMstack blog website/PWA I am currently using for documentation and reference. I copied a layout of dev.to forum ( sorry dev.to :D ).",
-    extraContent: "Project is not 100% complete, as I am adding new blogs, and making small changes often.",
+    extraContent:
+      "Project is not 100% complete, as I am adding new blogs, and making small changes often.",
     links: {
       source: "https://github.com/NemesOliver/frontend-strapi-blog",
       live: "https://frontend-strapi-blog.vercel.app/",

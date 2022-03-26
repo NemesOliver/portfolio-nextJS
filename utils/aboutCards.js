@@ -9,7 +9,7 @@ const aboutCards = [
     mainText: "2.",
     title: "TESTING",
     description:
-      "First thing on my list is to utilize React testing library and Jest to adopt TDD approach",
+      "Second thing on my list is to utilize React testing library and Jest to adopt TDD approach",
   },
   {
     mainText: "3.",

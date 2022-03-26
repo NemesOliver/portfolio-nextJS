@@ -2,7 +2,7 @@ const homeCards = [
   {
     title: "EVERYTHING REACT",
     description:
-      "My focus is on building single page applications with React and NextJS.",
+      "My focus is on building single page applications with React and JAMstack sites with NextJS.",
     image: {
       src: "/assets/react_card.svg",
       alt: "react card",
